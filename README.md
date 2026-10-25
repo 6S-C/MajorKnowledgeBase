@@ -17,6 +17,7 @@
 ├─ README.md                         团队课程总览
 ├─ 团队课程知识库整理与交付规范.md    所有课程共同遵守的规范
 ├─ .gitignore
+├─ .gitattributes                     跨系统统一文本换行
 └─ courses/
    └─ DS_数据结构/
       ├─ README.md                   本课程说明和导入步骤
