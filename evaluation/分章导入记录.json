@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-25",
+  "chapters": [
+    {
+      "name": "数据结构_第1章_绪论",
+      "chapter": 1,
+      "documents": [
+        {
+          "filename": "DS_CH01_第1章  绪论-作业__题目与校正答案.md",
+          "sha256": "916b431d02fd302f4fa74d3eb41af5d91e66660c35763cbeef5f94eb03dde66a",
+          "bytes": 5310
+        },
+        {
+          "filename": "DS_CH01_第1章(绪论)-练习题__题目与校正答案.md",
+          "sha256": "89f4a350414c433f9c1340ee8865c00b51e27660f8436203076301dcf59fa115",
+          "bytes": 6056
+        },
+        {
+          "filename": "DS_CH01_第1章实验课补充练习题__题目与校正答案.md",
+          "sha256": "9e5c13f28f08b96de84e70572712c2ae8d65892afc496023d1426f728e2a5d27",
+          "bytes": 11120
+        },
+        {
+          "filename": "DS_CH01_课件正文.md",
+          "sha256": "ae74a5a7c6b6f5440692c37fe015d35b2179f39c96d4f53e394c5e1349a7ec54",
+          "bytes": 29558
+        }
+      ],
+      "status": "ready",
+      "raw_documents": 4,
+      "chunks": 55,
+      "index_version": "version-6",
+      "readiness_verified": true
+    },
+    {
+      "name": "数据结构_第3章_栈和队列",
+      "chapter": 3,
+      "documents": [
+        {
+          "filename": "DS_CH03_第3章 栈和队列-作业__题目与校正答案.md",
+          "sha256": "00db4ede0e729f81eeadb34102a9fc65c7abd0e5a630fe8cbdf7455aaee597a6",
+          "bytes": 10091
+        },
+        {
+          "filename": "DS_CH03_第3章(栈和队列)-练习题__题目与校正答案.md",
+          "sha256": "e99d49d454bb327b19143920a5a7e5800981fa95a6c3fda14703db6252b7057e",
+          "bytes": 19156
+        },
+        {
+          "filename": "DS_CH03_第3章实验课补充练习题__题目与校正答案.md",
+          "sha256": "13c12b470a9b880743c3fa3509c09755ccf602fa77ac8da899b6297a3a528e68",
+          "bytes": 16919
+        },
+        {
+          "filename": "DS_CH03_课件正文.md",
+          "sha256": "c0379ff18ad331a20e6c30f682adcb7eb90e46e0a606165c3394f227ce25d022",
+          "bytes": 41954
+        }
+      ],
+      "status": "ready",
+      "raw_documents": 4,
+      "chunks": 98,
+      "index_version": "version-1",
+      "readiness_verified": true
+    },
+    {
+      "name": "数据结构_第2章_线性表",
+      "chapter": 2,
+      "documents": [
+        {
+          "filename": "DS_CH02_第2章 线性表-作业__题目与校正答案.md",
+          "sha256": "e85745cf019443d17b57e8b70f96cda9cddadb4b030a8de54dac29df0626dcc5",
+          "bytes": 9724
+        },
+        {
+          "filename": "DS_CH02_第2章(线性表)-练习题__题目与校正答案.md",
+          "sha256": "940ad35f2fbdcb42049754fb4481a01ba22ede2cbf40bd1cb6b46a42250218eb",
+          "bytes": 22025
+        },
+        {
+          "filename": "DS_CH02_第2章实验课补充练习题__题目与校正答案.md",
+          "sha256": "8c650122596e1f701d6879ba524b18e12853655cbc5162048520e9e2672d229d",
+          "bytes": 11960
+        },
+        {
+          "filename": "DS_CH02_课件正文.md",
+          "sha256": "0006b498aef0f975cc0f0e2efc4bd4709a3ca35bd5076abbefee0880773c43cb",
+          "bytes": 45317
+        },
+        {
+          "filename": "DS_CH02_题目统计与目录.md",
+          "sha256": "bf3ef1a51b029b2a35fea2d5452722733ce4a63abc566b66dcbda5e15b5a475f",
+          "bytes": 2370
+        }
+      ],
+      "status": "ready",
+      "raw_documents": 5,
+      "chunks": 96,
+      "index_version": "version-5",
+      "readiness_verified": true
+    }
+  ],
+  "note": "本机运行历史记录；本仓库不包含运行索引，使用者需自行重建。"
+}

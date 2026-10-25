@@ -1,0 +1,17 @@
+.venv/
+node_modules/
+runtime/
+data/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+model_catalog.json
+__pycache__/
+*.log
+*.db
+*.sqlite*
+*.exe
+*.o
+*.obj

@@ -1,0 +1,124 @@
+[
+  {
+    "chapter": 1,
+    "filename": "第1章  绪论-作业.doc",
+    "bytes": 20992,
+    "sha256": "23d112c2e563f725fcd7f78fa1fc36f679e9d38c2506c431742e4d5bbc6f4dc3",
+    "extracted": true,
+    "characters": 1586,
+    "inline_shapes": 0,
+    "floating_shapes": 0,
+    "equations": 0
+  },
+  {
+    "chapter": 1,
+    "filename": "第1章 绪论-答案.doc",
+    "bytes": 11776,
+    "sha256": "a6e1482c0a6b537bc7dbd3a392efc049eea3dd97771c5e5e3faa532af71a58d0",
+    "extracted": true,
+    "characters": 185,
+    "inline_shapes": 0,
+    "floating_shapes": 0,
+    "equations": 0
+  },
+  {
+    "chapter": 1,
+    "filename": "第1章 绪论（共4学时）.pptx",
+    "bytes": 1526381,
+    "sha256": "989ea7e2279704fe76f09a00cdde83f2a7346700b48e7bdc7f8f261cabcf19a3",
+    "slides": 68
+  },
+  {
+    "chapter": 1,
+    "filename": "第1章(绪论)-练习题.docx",
+    "bytes": 13082,
+    "sha256": "12a50e5b7322f3af3a8aada2f324ae9bad2ed2dfedaf70ef4fc60a7ffef2e6c9",
+    "characters": 1096,
+    "math_objects": 0,
+    "images": []
+  },
+  {
+    "chapter": 1,
+    "filename": "第1章实验课补充练习题.docx",
+    "bytes": 19804,
+    "sha256": "9f4992c49dc068565a455710eb34189b3a7e56f8ddcb0cb31803896695946404",
+    "characters": 4449,
+    "math_objects": 0,
+    "images": []
+  },
+  {
+    "chapter": 2,
+    "filename": "第2章 线性表-作业.doc",
+    "bytes": 29696,
+    "sha256": "93b462e109e77aca7abbaadb5d07d404fc554206e5775f5525ecdf521cfef38d",
+    "extracted": true,
+    "characters": 3105,
+    "inline_shapes": 0,
+    "floating_shapes": 0,
+    "equations": 0
+  },
+  {
+    "chapter": 2,
+    "filename": "第2章 线性表（共8学时）.pptx",
+    "bytes": 1675035,
+    "sha256": "efc02b49d0112366d5cbce5ea9930eb876454ed6e72f879dc0406502aa672678",
+    "slides": 101
+  },
+  {
+    "chapter": 2,
+    "filename": "第2章(线性表)-练习题.docx",
+    "bytes": 25675,
+    "sha256": "69e8a165fb7163cfe052bf1cf43d3aa256746cd249d1c6c12346262ccb4b717f",
+    "characters": 11215,
+    "math_objects": 0,
+    "images": []
+  },
+  {
+    "chapter": 2,
+    "filename": "第2章实验课补充练习题.docx",
+    "bytes": 17844,
+    "sha256": "30d90f1f1a9523a59b95f995502242ef560e2df51ca3586090aa96b2d2c8db8b",
+    "characters": 4416,
+    "math_objects": 0,
+    "images": []
+  },
+  {
+    "chapter": 3,
+    "filename": "第3章 栈和队列-作业.doc",
+    "bytes": 30720,
+    "sha256": "fc48a6b78c3c53ab57960032d18edd2854a9e583c7ffea24649d440404ed066a",
+    "extracted": true,
+    "characters": 3611,
+    "inline_shapes": 0,
+    "floating_shapes": 0,
+    "equations": 0
+  },
+  {
+    "chapter": 3,
+    "filename": "第3章 栈和队列（共8学时）.pptx",
+    "bytes": 1528489,
+    "sha256": "7c8cf462ccb5511b5cad4360d7030f5912b3dc1c74d2e3c9fec4e7e49e59ff5c",
+    "slides": 119
+  },
+  {
+    "chapter": 3,
+    "filename": "第3章(栈和队列)-练习题.docx",
+    "bytes": 60928,
+    "sha256": "bf3c987b255890b37a62cd2f84f97c4645ad8ef2018ff7b20c05400572d0a389",
+    "actual_format": "OLE legacy Word (.doc), mislabeled .docx",
+    "extracted": true,
+    "characters": 8876,
+    "inline_shapes": 0,
+    "floating_shapes": 0,
+    "equations": 0
+  },
+  {
+    "chapter": 3,
+    "filename": "第3章实验课补充练习题.docx",
+    "bytes": 19973,
+    "sha256": "bf6dd459b2d14150a8e68a1cf623d690b4084fddd396b60a4298dff2d6f5c834",
+    "characters": 6063,
+    "math_objects": 0,
+    "images": []
+  }
+]

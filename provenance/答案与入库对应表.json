@@ -1,0 +1,56 @@
+[
+  {
+    "chapter": 1,
+    "source_stem": "第1章(绪论)-练习题",
+    "answer": "chapters/第1章_绪论/03_答案与解析/第1章(绪论)-练习题__答案与解析.md",
+    "ingestion_file": "chapters/第1章_绪论/04_入库资料/DS_CH01_第1章(绪论)-练习题__题目与校正答案.md"
+  },
+  {
+    "chapter": 1,
+    "source_stem": "第1章实验课补充练习题",
+    "answer": "chapters/第1章_绪论/03_答案与解析/第1章实验课补充练习题__答案与解析.md",
+    "ingestion_file": "chapters/第1章_绪论/04_入库资料/DS_CH01_第1章实验课补充练习题__题目与校正答案.md"
+  },
+  {
+    "chapter": 1,
+    "source_stem": "第1章  绪论-作业",
+    "answer": "chapters/第1章_绪论/03_答案与解析/第1章  绪论-作业__答案与解析.md",
+    "ingestion_file": "chapters/第1章_绪论/04_入库资料/DS_CH01_第1章  绪论-作业__题目与校正答案.md"
+  },
+  {
+    "chapter": 2,
+    "source_stem": "第2章 线性表-作业",
+    "answer": "chapters/第2章_线性表/03_答案与解析/第2章 线性表-作业__答案与解析.md",
+    "ingestion_file": "chapters/第2章_线性表/04_入库资料/DS_CH02_第2章 线性表-作业__题目与校正答案.md"
+  },
+  {
+    "chapter": 2,
+    "source_stem": "第2章(线性表)-练习题",
+    "answer": "chapters/第2章_线性表/03_答案与解析/第2章(线性表)-练习题__答案与解析.md",
+    "ingestion_file": "chapters/第2章_线性表/04_入库资料/DS_CH02_第2章(线性表)-练习题__题目与校正答案.md"
+  },
+  {
+    "chapter": 2,
+    "source_stem": "第2章实验课补充练习题",
+    "answer": "chapters/第2章_线性表/03_答案与解析/第2章实验课补充练习题__答案与解析.md",
+    "ingestion_file": "chapters/第2章_线性表/04_入库资料/DS_CH02_第2章实验课补充练习题__题目与校正答案.md"
+  },
+  {
+    "chapter": 3,
+    "source_stem": "第3章 栈和队列-作业",
+    "answer": "chapters/第3章_栈和队列/03_答案与解析/第3章 栈和队列-作业__答案与解析.md",
+    "ingestion_file": "chapters/第3章_栈和队列/04_入库资料/DS_CH03_第3章 栈和队列-作业__题目与校正答案.md"
+  },
+  {
+    "chapter": 3,
+    "source_stem": "第3章(栈和队列)-练习题",
+    "answer": "chapters/第3章_栈和队列/03_答案与解析/第3章(栈和队列)-练习题__答案与解析.md",
+    "ingestion_file": "chapters/第3章_栈和队列/04_入库资料/DS_CH03_第3章(栈和队列)-练习题__题目与校正答案.md"
+  },
+  {
+    "chapter": 3,
+    "source_stem": "第3章实验课补充练习题",
+    "answer": "chapters/第3章_栈和队列/03_答案与解析/第3章实验课补充练习题__答案与解析.md",
+    "ingestion_file": "chapters/第3章_栈和队列/04_入库资料/DS_CH03_第3章实验课补充练习题__题目与校正答案.md"
+  }
+]
