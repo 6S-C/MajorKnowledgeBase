@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-25",
+  "ustc_lecture_http_checks": [
+    {
+      "id": "lec1-1",
+      "url": "https://rshiny.ustc.edu.cn/lectures/probstat/lec1-1.html",
+      "http_status": 200,
+      "bytes": 39136,
+      "title": "第一章 概率论的基本概念 (LEC1-1)"
+    },
+    {
+      "id": "lec1-2",
+      "url": "https://rshiny.ustc.edu.cn/lectures/probstat/lec1-2.html",
+      "http_status": 200,
+      "bytes": 34957,
+      "title": "第一章 概率论的基本概念 (LEC1-2)"
+    },
+    {
+      "id": "lec2-1",
+      "url": "https://rshiny.ustc.edu.cn/lectures/probstat/lec2-1.html",
+      "http_status": 200,
+      "bytes": 36209,
+      "title": "第二章 随机变量及其分布 (LEC2-1)"
+    },
+    {
+      "id": "lec2-2",
+      "url": "https://rshiny.ustc.edu.cn/lectures/probstat/lec2-2.html",
+      "http_status": 200,
+      "bytes": 30170,
+      "title": "第二章 随机变量及其分布 (LEC2-2)"
+    },
+    {
+      "id": "lec3-5",
+      "url": "https://rshiny.ustc.edu.cn/lectures/probstat/lec3-5.html",
+      "http_status": 200,
+      "bytes": 36595,
+      "title": "第三章 多维随机变量及其分布 (LEC3-5)"
+    },
+    {
+      "id": "lec3-1",
+      "url": "https://rshiny.ustc.edu.cn/lectures/probstat/lec3-1.html",
+      "http_status": 200,
+      "bytes": 93787,
+      "title": "第三章 多维随机变量及其分布 (LEC3-1)"
+    },
+    {
+      "id": "lec3-2",
+      "url": "https://rshiny.ustc.edu.cn/lectures/probstat/lec3-2.html",
+      "http_status": 200,
+      "bytes": 24731,
+      "title": "第三章 多维随机变量及其分布 (LEC3-2)"
+    }
+  ],
+  "official_preview_endpoint": "https://xuanshu.hep.com.cn/front/book/previewBookResource?bookId=5c9a64e9f18f967ee7f3805c",
+  "official_preview_response_success": true,
+  "official_preview_contents_inspected": "浏览器实际打开第三章样章，预览器30页，未逐页阅读全文",
+  "fifth_edition_ppt_downloaded": false,
+  "abook_course_content_obtained": false,
+  "textbook_complete_first_three_chapters_obtained": false,
+  "real_teacher_files_downloaded": 3,
+  "sources_registered": 15
+}

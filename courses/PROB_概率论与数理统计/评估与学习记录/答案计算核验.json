@@ -1,0 +1,1107 @@
+{
+  "date": "2026-10-25",
+  "python_standard_library_only": true,
+  "exercise_checks": 45,
+  "lecture_example_checks": 6,
+  "passed": 51,
+  "total": 51,
+  "checks": [
+    {
+      "id": "PROB-CH01-EX-GEN-001",
+      "method": "枚举8个等可能有序序列",
+      "actual": {
+        "fraction": "3/8",
+        "decimal": 0.375
+      },
+      "expected": {
+        "fraction": "3/8",
+        "decimal": 0.375
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-002",
+      "method": "集合并集枚举",
+      "actual": {
+        "fraction": "5/8",
+        "decimal": 0.625
+      },
+      "expected": {
+        "fraction": "5/8",
+        "decimal": 0.625
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-003",
+      "method": "精确分数计算并集、差集和补事件",
+      "actual": [
+        {
+          "fraction": "3/4",
+          "decimal": 0.75
+        },
+        {
+          "fraction": "7/20",
+          "decimal": 0.35
+        },
+        {
+          "fraction": "1/4",
+          "decimal": 0.25
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "3/4",
+          "decimal": 0.75
+        },
+        {
+          "fraction": "7/20",
+          "decimal": 0.35
+        },
+        {
+          "fraction": "1/4",
+          "decimal": 0.25
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-004",
+      "method": "枚举56个球组，前5个球为白球",
+      "actual": {
+        "fraction": "15/28",
+        "decimal": 0.5357142857142857
+      },
+      "expected": {
+        "fraction": "15/28",
+        "decimal": 0.5357142857142857
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-005",
+      "method": "枚举不同岗位的所有有序分配",
+      "actual": [
+        336,
+        {
+          "fraction": "3/8",
+          "decimal": 0.375
+        }
+      ],
+      "expected": [
+        336,
+        {
+          "fraction": "3/8",
+          "decimal": 0.375
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-006",
+      "method": "两个方向的条件概率",
+      "actual": [
+        {
+          "fraction": "3/5",
+          "decimal": 0.6
+        },
+        {
+          "fraction": "3/4",
+          "decimal": 0.75
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "3/5",
+          "decimal": 0.6
+        },
+        {
+          "fraction": "3/4",
+          "decimal": 0.75
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-007",
+      "method": "枚举30个无放回有序抽取，前2个为红球",
+      "actual": [
+        {
+          "fraction": "1/15",
+          "decimal": 0.06666666666666667
+        },
+        {
+          "fraction": "1/3",
+          "decimal": 0.3333333333333333
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "1/15",
+          "decimal": 0.06666666666666667
+        },
+        {
+          "fraction": "1/3",
+          "decimal": 0.3333333333333333
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-008",
+      "method": "供货来源加权",
+      "actual": {
+        "fraction": "41/1000",
+        "decimal": 0.041
+      },
+      "expected": {
+        "fraction": "41/1000",
+        "decimal": 0.041
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-009",
+      "method": "不合格产品的来源归一化",
+      "actual": {
+        "fraction": "35/41",
+        "decimal": 0.8536585365853658
+      },
+      "expected": {
+        "fraction": "35/41",
+        "decimal": 0.8536585365853658
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-010",
+      "method": "枚举8种部件状态加权",
+      "actual": {
+        "fraction": "243/250",
+        "decimal": 0.972
+      },
+      "expected": {
+        "fraction": "243/250",
+        "decimal": 0.972
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-011",
+      "method": "独立二事件的完整联合表",
+      "actual": [
+        {
+          "fraction": "29/50",
+          "decimal": 0.58
+        },
+        {
+          "fraction": "21/50",
+          "decimal": 0.42
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "29/50",
+          "decimal": 0.58
+        },
+        {
+          "fraction": "21/50",
+          "decimal": 0.42
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-012",
+      "method": "比较互斥交概率与乘积",
+      "actual": [
+        false,
+        {
+          "fraction": "3/50",
+          "decimal": 0.06
+        }
+      ],
+      "expected": [
+        false,
+        {
+          "fraction": "3/50",
+          "decimal": 0.06
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-013",
+      "method": "枚举三事件两两交与三重交",
+      "actual": [
+        [
+          {
+            "fraction": "1/4",
+            "decimal": 0.25
+          },
+          {
+            "fraction": "1/4",
+            "decimal": 0.25
+          },
+          {
+            "fraction": "1/4",
+            "decimal": 0.25
+          }
+        ],
+        {
+          "fraction": "1/4",
+          "decimal": 0.25
+        },
+        {
+          "fraction": "1/8",
+          "decimal": 0.125
+        }
+      ],
+      "expected": [
+        [
+          {
+            "fraction": "1/4",
+            "decimal": 0.25
+          },
+          {
+            "fraction": "1/4",
+            "decimal": 0.25
+          },
+          {
+            "fraction": "1/4",
+            "decimal": 0.25
+          }
+        ],
+        {
+          "fraction": "1/4",
+          "decimal": 0.25
+        },
+        {
+          "fraction": "1/8",
+          "decimal": 0.125
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-014",
+      "method": "计算频率，并给出两个不同p下均可出现的有限样本",
+      "actual": [
+        {
+          "fraction": "3/5",
+          "decimal": 0.6
+        },
+        true
+      ],
+      "expected": [
+        {
+          "fraction": "3/5",
+          "decimal": 0.6
+        },
+        true
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-EX-GEN-015",
+      "method": "枚举32种失败状态",
+      "actual": {
+        "fraction": "40951/100000",
+        "decimal": 0.40951
+      },
+      "expected": {
+        "fraction": "40951/100000",
+        "decimal": 0.40951
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-001",
+      "method": "枚举三次投掷并按正面数聚合",
+      "actual": [
+        {
+          "fraction": "1/8",
+          "decimal": 0.125
+        },
+        {
+          "fraction": "3/8",
+          "decimal": 0.375
+        },
+        {
+          "fraction": "3/8",
+          "decimal": 0.375
+        },
+        {
+          "fraction": "1/8",
+          "decimal": 0.125
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "1/8",
+          "decimal": 0.125
+        },
+        {
+          "fraction": "3/8",
+          "decimal": 0.375
+        },
+        {
+          "fraction": "3/8",
+          "decimal": 0.375
+        },
+        {
+          "fraction": "1/8",
+          "decimal": 0.125
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-002",
+      "method": "概率表归一化",
+      "actual": [
+        {
+          "fraction": "1/6",
+          "decimal": 0.16666666666666666
+        },
+        {
+          "fraction": "5/6",
+          "decimal": 0.8333333333333334
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "1/6",
+          "decimal": 0.16666666666666666
+        },
+        {
+          "fraction": "5/6",
+          "decimal": 0.8333333333333334
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-003",
+      "method": "枚举64种伯努利状态",
+      "actual": [
+        {
+          "fraction": "768/3125",
+          "decimal": 0.24576
+        },
+        {
+          "fraction": "11529/15625",
+          "decimal": 0.737856
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "768/3125",
+          "decimal": 0.24576
+        },
+        {
+          "fraction": "11529/15625",
+          "decimal": 0.737856
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-004",
+      "method": "前三次指定路径与四次全失败",
+      "actual": [
+        {
+          "fraction": "9/64",
+          "decimal": 0.140625
+        },
+        {
+          "fraction": "81/256",
+          "decimal": 0.31640625
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "9/64",
+          "decimal": 0.140625
+        },
+        {
+          "fraction": "81/256",
+          "decimal": 0.31640625
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-005",
+      "method": "泊松质量逐项求和",
+      "actual": [
+        0.1353352832366127,
+        0.6766764161830635
+      ],
+      "expected": [
+        0.1353352832366127,
+        0.6766764161830635
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-006",
+      "method": "从CDF跳跃对应的质量表按端点求和",
+      "actual": [
+        {
+          "fraction": "1/2",
+          "decimal": 0.5
+        },
+        {
+          "fraction": "1/2",
+          "decimal": 0.5
+        },
+        {
+          "fraction": "1/4",
+          "decimal": 0.25
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "1/2",
+          "decimal": 0.5
+        },
+        {
+          "fraction": "1/2",
+          "decimal": 0.5
+        },
+        {
+          "fraction": "1/4",
+          "decimal": 0.25
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-007",
+      "method": "构造负的区间概率",
+      "actual": -0.09999999999999998,
+      "expected": -0.1,
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-008",
+      "method": "密度数值积分及区间积分",
+      "actual": [
+        1.0,
+        0.3125
+      ],
+      "expected": [
+        1,
+        {
+          "fraction": "5/16",
+          "decimal": 0.3125
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-009",
+      "method": "均匀区间长度及CDF反解",
+      "actual": [
+        0.5,
+        2.0
+      ],
+      "expected": [
+        0.5,
+        2
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-010",
+      "method": "指数生存函数与条件比值",
+      "actual": [
+        0.1353352832366127,
+        0.1353352832366127
+      ],
+      "expected": [
+        0.1353352832366127,
+        0.1353352832366127
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-011",
+      "method": "标准库正态CDF与反函数",
+      "actual": [
+        0.6826894921370856,
+        13.919927969080106
+      ],
+      "expected": [
+        0.6826894921370859,
+        13.919927969080108
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-012",
+      "method": "确定性均匀网格验证平方CDF三点，并差分检查一处密度",
+      "actual": [
+        [
+          0.2,
+          0.5,
+          0.9
+        ],
+        0.9999999999732445
+      ],
+      "expected": [
+        [
+          0.2,
+          0.5,
+          0.9
+        ],
+        1
+      ],
+      "tolerance": 1e-06,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-013",
+      "method": "递减变换密度积分；截断尾部误差小于2e-9",
+      "actual": [
+        0.9999999987500876,
+        0.3678794399213616
+      ],
+      "expected": [
+        1,
+        0.36787944117144233
+      ],
+      "tolerance": 1e-07,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-014",
+      "method": "按函数值聚合离散概率",
+      "actual": {
+        "0": {
+          "fraction": "1/2",
+          "decimal": 0.5
+        },
+        "1": {
+          "fraction": "1/2",
+          "decimal": 0.5
+        }
+      },
+      "expected": {
+        "0": {
+          "fraction": "1/2",
+          "decimal": 0.5
+        },
+        "1": {
+          "fraction": "1/2",
+          "decimal": 0.5
+        }
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH02-EX-GEN-015",
+      "method": "点质量与连续部分分别计算",
+      "actual": [
+        1.0,
+        0.3,
+        0.35
+      ],
+      "expected": [
+        1,
+        0.3,
+        0.35
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-001",
+      "method": "联合表逐行逐列汇总",
+      "actual": [
+        [
+          {
+            "fraction": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "fraction": "7/10",
+            "decimal": 0.7
+          }
+        ],
+        [
+          {
+            "fraction": "2/5",
+            "decimal": 0.4
+          },
+          {
+            "fraction": "3/5",
+            "decimal": 0.6
+          }
+        ],
+        {
+          "fraction": "9/10",
+          "decimal": 0.9
+        }
+      ],
+      "expected": [
+        [
+          {
+            "fraction": "3/10",
+            "decimal": 0.3
+          },
+          {
+            "fraction": "7/10",
+            "decimal": 0.7
+          }
+        ],
+        [
+          {
+            "fraction": "2/5",
+            "decimal": 0.4
+          },
+          {
+            "fraction": "3/5",
+            "decimal": 0.6
+          }
+        ],
+        {
+          "fraction": "9/10",
+          "decimal": 0.9
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-002",
+      "method": "逐项检验独立乘积",
+      "actual": false,
+      "expected": false,
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-003",
+      "method": "联合表条件化",
+      "actual": [
+        {
+          "fraction": "3/4",
+          "decimal": 0.75
+        },
+        {
+          "fraction": "4/7",
+          "decimal": 0.5714285714285714
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "3/4",
+          "decimal": 0.75
+        },
+        {
+          "fraction": "4/7",
+          "decimal": 0.5714285714285714
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-004",
+      "method": "按三角区域数值积分及边缘点值",
+      "actual": [
+        1.0,
+        1.5,
+        0.5
+      ],
+      "expected": [
+        1,
+        1.5,
+        0.5
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-005",
+      "method": "三个正条件值下的归一化和半区间概率",
+      "actual": [
+        [
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "expected": [
+        [
+          1,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ],
+        [
+          1,
+          0.5
+        ]
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-006",
+      "method": "支持域与事件域交集的截面面积积分",
+      "actual": 0.5,
+      "expected": 0.5,
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-007",
+      "method": "边缘积分、乘积检验与矩形概率",
+      "actual": [
+        0.6,
+        0.8000000000000002,
+        0.48,
+        0.0625
+      ],
+      "expected": [
+        0.6,
+        0.8,
+        0.48,
+        {
+          "fraction": "1/16",
+          "decimal": 0.0625
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-008",
+      "method": "矛盾事件交集为零，两个边缘事件均为正",
+      "actual": [
+        0,
+        0.0625
+      ],
+      "expected": [
+        0,
+        {
+          "fraction": "1/16",
+          "decimal": 0.0625
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-009",
+      "method": "卷积有效区间与三角区域面积",
+      "actual": [
+        [
+          0.25,
+          0.75,
+          0.75,
+          0.25
+        ],
+        0.125
+      ],
+      "expected": [
+        [
+          0.25,
+          0.75,
+          0.75,
+          0.25
+        ],
+        {
+          "fraction": "1/8",
+          "decimal": 0.125
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-010",
+      "method": "直接卷积和尾部数值积分",
+      "actual": [
+        0.27067056647322535,
+        0.40600584970945514
+      ],
+      "expected": [
+        0.2706705664732254,
+        0.4060058497098381
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-011",
+      "method": "单位正方形确定性网格计数",
+      "actual": [
+        0.64,
+        0.64
+      ],
+      "expected": [
+        0.64,
+        0.64
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-012",
+      "method": "枚举不同成功率的二点变量",
+      "actual": [
+        {
+          "fraction": "21/50",
+          "decimal": 0.42
+        },
+        {
+          "fraction": "23/50",
+          "decimal": 0.46
+        },
+        {
+          "fraction": "3/25",
+          "decimal": 0.12
+        }
+      ],
+      "expected": [
+        {
+          "fraction": "21/50",
+          "decimal": 0.42
+        },
+        {
+          "fraction": "23/50",
+          "decimal": 0.46
+        },
+        {
+          "fraction": "3/25",
+          "decimal": 0.12
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-013",
+      "method": "数值卷积CDF与目标正态CDF的两个点比较",
+      "actual": [
+        0.5,
+        0.797309721770529
+      ],
+      "expected": [
+        0.5,
+        0.7973097217705287
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-014",
+      "method": "在单位正方形上直接积分商事件面积",
+      "actual": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "expected": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH03-EX-GEN-015",
+      "method": "积事件直接分区积分",
+      "actual": 0.5965735902799754,
+      "expected": 0.5965735902799727,
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "EX"
+    },
+    {
+      "id": "PROB-CH01-L01",
+      "method": "讲义例题：枚举球对",
+      "actual": {
+        "fraction": "3/5",
+        "decimal": 0.6
+      },
+      "expected": {
+        "fraction": "3/5",
+        "decimal": 0.6
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "L"
+    },
+    {
+      "id": "PROB-CH01-L02",
+      "method": "讲义例题：湿路面贝叶斯归一化",
+      "actual": {
+        "fraction": "9/13",
+        "decimal": 0.6923076923076923
+      },
+      "expected": {
+        "fraction": "9/13",
+        "decimal": 0.6923076923076923
+      },
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "L"
+    },
+    {
+      "id": "PROB-CH02-L01",
+      "method": "讲义例题：正态CDF",
+      "actual": 0.6826894921370856,
+      "expected": 0.6826894921370859,
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "L"
+    },
+    {
+      "id": "PROB-CH02-L02",
+      "method": "讲义例题：U(0,2)平方在y=1处的CDF",
+      "actual": {
+        "fraction": "1/2",
+        "decimal": 0.5
+      },
+      "expected": 0.5,
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "L"
+    },
+    {
+      "id": "PROB-CH03-L01",
+      "method": "讲义例题：联合表边缘与条件",
+      "actual": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.30000000000000004,
+          0.7
+        ],
+        0.5714285714285715
+      ],
+      "expected": [
+        [
+          0.5,
+          0.5
+        ],
+        [
+          0.3,
+          0.7
+        ],
+        {
+          "fraction": "4/7",
+          "decimal": 0.5714285714285714
+        }
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "L"
+    },
+    {
+      "id": "PROB-CH03-L02",
+      "method": "讲义例题：不等长均匀分布卷积的三段面积",
+      "actual": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "expected": [
+        0.25,
+        0.5,
+        0.25
+      ],
+      "tolerance": 1e-08,
+      "passed": true,
+      "kind": "L"
+    }
+  ]
+}
