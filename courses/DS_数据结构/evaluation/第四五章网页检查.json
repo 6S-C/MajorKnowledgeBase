@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-01",
+  "status": 200,
+  "chapters": [
+    {
+      "name": "数据结构_第4章_串",
+      "visible": true
+    },
+    {
+      "name": "数据结构_第5章_数组和广义表",
+      "visible": true
+    }
+  ],
+  "page_errors": []
+}

@@ -1,0 +1,701 @@
+{
+  "date": "2026-11-01",
+  "method": "Actual RAGService top-5, rewrite=False; compare full persisted chunks; no chat-model calls.",
+  "cases": 12,
+  "passed": 12,
+  "records": [
+    {
+      "chapter": 4,
+      "case": "题目数量",
+      "query": "第四章串的作业和练习有多少道题？题型和原题号范围是什么？",
+      "index_version": "version-3",
+      "passed": true,
+      "anchor_coverage": {
+        "10道主问题": true,
+        "1、2、3、4": true,
+        "算法设计题": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "00_DS_CH04_章节导航与题目统计.md",
+          "chunk_id": "ccd4cd1b-088d-4fab-9458-2d4403bca92e",
+          "expected_file": true,
+          "anchors": [
+            "10道主问题"
+          ],
+          "full_chunk_text": "# 第4章 串 章节导航与题目统计\n\n课程：数据结构；知识库：数据结构_第4章_串；日期：2026-11-01；版本：v0.1.0。\n\n**本章当前已提供的作业习题共10道主问题。** 只统计第4、5章 串、数组和广义表-作业.doc中归属本章的正式顶层题号；按出现次数计数，不跨原卷去重；小问、空格、选项、参考答案、课件示例及聊天生成题不重复计数。这是当前已提供资料的完整统计，不代表整学期所有习题。合并原卷共20道：第四章10道、第五章10道。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "a08d917c-758d-4ce0-849d-8630dc096ab6",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "即使加上计算next[j]时所用的比较次数m，比较总次数也仅为n+m=O(n＋m)，大大快于BF算法。\n回顾BF的最恶劣情况：S与T之间存在大量的部分匹配，比较总次数为： (n-m+1)*m＝O(n*m)\nKMP算法的用途：因为主串指针i不必回溯，所以从外存输入文件时可以做到边读入边查找，“流式”作业！\n4.3    串的模式匹配算法—KMP算法\nKMP算法的空间效率思考：额外引入一个数组next，需要m个空间。空间效率是O（m）\n用空间，换时间。\n\n## 原课件第 75 页 [DS-CH04-S075]\n\n熟悉串的基本操作的定义，并能利用这些基本操作来实现串的其它各种操作的方法。\n2.了解串的各种存储结构的特点及其适用场合。信息检索、文字编辑、自然语言翻译系统等。\n本章小结\n\n## 原课件第 76 页 [DS-CH04-S076]"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "4bc05f05-8479-4852-9ff7-91b5b397f8e7",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "# 第4章 串：合并作业参考答案与解析\n\n整理日期：2026-11-01；资料版本：v0.1.0。来源为同一份第4、5章合并作业，现按主题分章，保留原题号和稳定ID，不重新连续编号。答案为辅助编写并推导核对的学习参考，不是教师提供的标准答案；含题设修正和条件说明。原卷共20道主问题，两章各10道，不重复入库。\n\n## 填空题 原第1题 [DS-CH04-HW45-FI-001]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第1题。\n\n原题：\n\n称为空串；                               称为空白串。\n\n**参考答案**：\n\n长度为0、没有任何字符的串；由一个或多个空格字符组成的串。\n\n**解析与核对说明**：空串记为 \"\"，长度为0；空白串如 \" \"、\"   \"，长度分别为1、3。C字符串结尾的空字符 \\0 不计入串长，不能把它当成空格。\n\n**依据**：DS-CH04-S006、S017。\n\n## 填空题 原第2题 [DS-CH04-HW45-FI-002]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第2题。\n\n原题：\n\n设S=“A;/document/Mary.doc”，则strlen(s)=                ,"
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "80bd46da-5588-4883-8d23-097f1acccd93",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "8\n此时效率不高的原因为：\n4.3    串的模式匹配算法—KMP算法\n\n## 原课件第 73 页 [DS-CH04-S073]\n\ni                 1   2   3   4     5\n模式              a    a   a   a    b\nj=Next[i]       0    1   2   3    4\nNextval[i]      0    0   0   0    4\n举例：\n字符串’ababaaab’ 的 next函数值为________ 。\nnextval=？\n模式串 P= ‘ abaabcac ’的 next 函数值序列为 ________ 。nextval=？\n01122312\n01010421\n提问：\n01123422\n01021302\n4.3    串的模式匹配算法—KMP算法\n\n## 原课件第 74 页 [DS-CH04-S074]\n\n④ KMP算法的时间复杂度\n注意：由于BF算法在一般情况下的时间复杂度也近似于O(n+m),\n所以至今仍被采用。\n而此时KMP的情况是：由于指针i无须回溯，比较次数仅为n,即使加上计算next[j]时所用的比较次数m，比较总次数也仅为n+m=O(n＋m)，大大快于BF算法。"
+        },
+        {
+          "rank": 5,
+          "file": "00_DS_CH04_章节导航与题目统计.md",
+          "chunk_id": "49d40ebe-09fc-4dd8-9ee4-2d8347647f44",
+          "expected_file": true,
+          "anchors": [
+            "1、2、3、4",
+            "算法设计题"
+          ],
+          "full_chunk_text": "合并原卷共20道：第四章10道、第五章10道。\n\n| 原题型 | 本章原题号 | 主问题数 |\n|---|---|---:|\n| 填空题 | 1、2、3、4 | 4 |\n| 单选题 | 1、2、3 | 3 |\n| 计算题 | 1 | 1 |\n| 算法设计题 | 1、2 | 2 |\n\n## 逐题索引\n\n| 题目ID | 原题型/题号 | 原页码 |\n|---|---|---|\n| DS-CH04-HW45-FI-001 | 填空题第1题 | 1 |\n| DS-CH04-HW45-FI-002 | 填空题第2题 | 1 |\n| DS-CH04-HW45-FI-003 | 填空题第3题 | 1 |\n| DS-CH04-HW45-FI-004 | 填空题第4题 | 1 |\n| DS-CH04-HW45-SC-001 | 单选题第1题 | 1 |\n| DS-CH04-HW45-SC-002 | 单选题第2题 | 1 |\n| DS-CH04-HW45-SC-003 | 单选题第3题 | 1 |\n| DS-CH04-HW45-CAL-001 | 计算题第1题 | 2 |\n| DS-CH04-HW45-ALG-001 | 算法设计题第1题 | 3 |\n| DS-CH04-HW45-ALG-002 | 算法设计题第2题 | 3 |\n\n## 资料导航\n\n- 课件正文：DS_CH04_课件正文.md。"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "case": "原题定位",
+      "query": "DS-CH04-HW45-FI-002，A;/document/Mary.doc的strlen和第一个斜杠位置是多少？",
+      "index_version": "version-3",
+      "passed": true,
+      "anchor_coverage": {
+        "20": true,
+        "位置为3": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "b97ccbc5-f7b8-4d7f-85cb-912344917393",
+          "expected_file": true,
+          "anchors": [
+            "20",
+            "位置为3"
+          ],
+          "full_chunk_text": "doc，原件第1页；原卷填空题第2题。\n\n原题：\n\n设S=“A;/document/Mary.doc”，则strlen(s)=                , “/”的字符定位的位置为          。\n\n**参考答案**：\n\n20；首次出现的位置为3（课程串ADT从1计数）。\n\n**解析与核对说明**：原串是 A;/document/Mary.doc，按原件保留分号，不改成冒号。A、;、/各占1个字符，document占8个，第二个/占1个，Mary占4个，.占1个，doc占3个，共20个。两个/的位置为3、12；字符定位默认取第一次。若用C语言0起始数组下标，则分别为2、11。\n\n**依据**：DS-CH04-S006、S014。\n\n## 填空题 原第3题 [DS-CH04-HW45-FI-003]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第3题。\n\n原题：\n\n子串的定位运算称为串的模式匹配；                   称为目标串，             称为模式。\n\n**参考答案**：\n\n被查找的主串称为目标串；用于匹配的子串（待查字符串）称为模式。\n\n**解析与核对说明**：模式匹配是在目标串S中寻找与模式串T相等的连续字符段，并返回其首次出现的位置。\n\n**依据**：DS-CH04-S034、S035。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "b334738e-31ba-4d45-ac1f-bff7a05f4bad",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "题目未限定实现和成功/失败时，应说明这一口径。\n\n**依据**：DS-CH04-S051—S053。\n\n## 单选题 原第1题 [DS-CH04-HW45-SC-001]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷单选题第1题。\n\n原题：\n\n串是一种特殊的线性表，其特殊性体现在：\n   Ａ．可以顺序存储       Ｂ．数据元素是一个字符      \nＣ．可以链式存储        Ｄ．数据元素可以是多个字符\n\n**参考答案**：\n\nB。\n\n**解析与核对说明**：串是数据元素为单个字符的特殊线性表。能否顺序或链式存储不是区分串与一般线性表的关键。\n\n**依据**：DS-CH04-S004、S006、S016。\n\n## 单选题 原第2题 [DS-CH04-HW45-SC-002]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷单选题第2题。\n\n原题：\n\n设有两个串p和q，求q在p中首次出现的位置的运算称作：\n   Ａ．连接      Ｂ．模式匹配    Ｃ．求子串       Ｄ．求串长\n\n**参考答案**：\n\nB，模式匹配。"
+        },
+        {
+          "rank": 3,
+          "file": "00_DS_CH04_章节导航与题目统计.md",
+          "chunk_id": "49d40ebe-09fc-4dd8-9ee4-2d8347647f44",
+          "expected_file": false,
+          "anchors": [
+            "20"
+          ],
+          "full_chunk_text": "合并原卷共20道：第四章10道、第五章10道。\n\n| 原题型 | 本章原题号 | 主问题数 |\n|---|---|---:|\n| 填空题 | 1、2、3、4 | 4 |\n| 单选题 | 1、2、3 | 3 |\n| 计算题 | 1 | 1 |\n| 算法设计题 | 1、2 | 2 |\n\n## 逐题索引\n\n| 题目ID | 原题型/题号 | 原页码 |\n|---|---|---|\n| DS-CH04-HW45-FI-001 | 填空题第1题 | 1 |\n| DS-CH04-HW45-FI-002 | 填空题第2题 | 1 |\n| DS-CH04-HW45-FI-003 | 填空题第3题 | 1 |\n| DS-CH04-HW45-FI-004 | 填空题第4题 | 1 |\n| DS-CH04-HW45-SC-001 | 单选题第1题 | 1 |\n| DS-CH04-HW45-SC-002 | 单选题第2题 | 1 |\n| DS-CH04-HW45-SC-003 | 单选题第3题 | 1 |\n| DS-CH04-HW45-CAL-001 | 计算题第1题 | 2 |\n| DS-CH04-HW45-ALG-001 | 算法设计题第1题 | 3 |\n| DS-CH04-HW45-ALG-002 | 算法设计题第2题 | 3 |\n\n## 资料导航\n\n- 课件正文：DS_CH04_课件正文.md。"
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "4bc05f05-8479-4852-9ff7-91b5b397f8e7",
+          "expected_file": true,
+          "anchors": [
+            "20"
+          ],
+          "full_chunk_text": "# 第4章 串：合并作业参考答案与解析\n\n整理日期：2026-11-01；资料版本：v0.1.0。来源为同一份第4、5章合并作业，现按主题分章，保留原题号和稳定ID，不重新连续编号。答案为辅助编写并推导核对的学习参考，不是教师提供的标准答案；含题设修正和条件说明。原卷共20道主问题，两章各10道，不重复入库。\n\n## 填空题 原第1题 [DS-CH04-HW45-FI-001]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第1题。\n\n原题：\n\n称为空串；                               称为空白串。\n\n**参考答案**：\n\n长度为0、没有任何字符的串；由一个或多个空格字符组成的串。\n\n**解析与核对说明**：空串记为 \"\"，长度为0；空白串如 \" \"、\"   \"，长度分别为1、3。C字符串结尾的空字符 \\0 不计入串长，不能把它当成空格。\n\n**依据**：DS-CH04-S006、S017。\n\n## 填空题 原第2题 [DS-CH04-HW45-FI-002]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第2题。\n\n原题：\n\n设S=“A;/document/Mary.doc”，则strlen(s)=                ,"
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "a7422e6a-2959-425d-8bb8-ed94a802f7e0",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "**解析与核对说明**：求q在p中首次出现的位置属于Index/模式匹配；Concat是连接，SubString是取给定位置的子串，StrLength是求长度。\n\n**依据**：DS-CH04-S009、S034、S035。\n\n## 单选题 原第3题 [DS-CH04-HW45-SC-003]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷单选题第3题。\n\n原题：\n\n设串s1=’ABCDEFG’，s2=’PQRST’，函数con(x,y)返回x和y串的连接串，subs(s, i, j)返回串s的从序号i开始的j个字符组成的子串，len(s)返回串s的长度，则con(subs(s1, 2, len(s2)), subs(s1, len(s2), 2))的结果串是：\n   Ａ．BCDEF       Ｂ．BCDEFG     Ｃ．BCPQRST        Ｄ．BCDEFEF\n\n**参考答案**：\n\nD，BCDEFEF。\n\n**解析与核对说明**：len(s2)=5；subs(s1,2,5)=\"BCDEF\"；subs(s1,5,2)=\"EF\"；连接得到\"BCDEFEF\"。两段都来自s1，不是把s2本身拼接进去。序号从1开始。\n\n**依据**：DS-CH04-S011、S013。\n\n## 计算题 原第1题 [DS-CH04-HW45-CAL-001]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷计算题第1题。"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "case": "空格与副作用",
+      "query": "I AM A STUDENT的Replace和Concat两个表达式如何求值？空格和顺序执行有何区别？",
+      "index_version": "version-3",
+      "passed": true,
+      "anchor_coverage": {
+        "A GOOD STUDENT": true,
+        "越界": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "df5e5d87-94f9-4cff-b093-b9a6ce5cb8fa",
+          "expected_file": true,
+          "anchors": [
+            "A GOOD STUDENT",
+            "越界"
+          ],
+          "full_chunk_text": "doc，原件第2页；原卷计算题第1题。\n\n原题：\n\n设s=’I AM A STUDENT’, t=’GOOD’, q=’WORKER’, \n求Replace (s,’STUDENT’, q) 和Concat (SubString (s,6,2), Concat (t, SubString (s,7,8)))。\n\n**参考答案**：\n\nReplace结果为 \"I AM A WORKER\"；若两个表达式各从题设原始s求值，Concat结果为 \"A GOOD STUDENT\"。\n\n**解析与核对说明**：原始s=\"I AM A STUDENT\"长14，位置1:I、2:空格、3:A、4:M、5:空格、6:A、7:空格、8:S，后续为TUDENT。SubString(s,6,2)=\"A \"；SubString(s,7,8)=\" STUDENT\"；先连接t得\"GOOD STUDENT\"，再连接得\"A GOOD STUDENT\"，空格两侧各1个。这里Replace与Concat分别从原始s求值。若把Replace(&s,...)当成有副作用的语句先执行，s将缩为13个字符，此时SubString(s,7,8)越界，应报参数错误，不能静默截断。\n\n**依据**：DS-CH04-S012、S013、S018。\n\n## 算法设计题 原第1题 [DS-CH04-HW45-ALG-001]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第3页；原卷算法设计题第1题。\n\n原题：\n\n编写一个实现串的置换操作Replace (&S, T, V)的算法。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "b17f3889-046c-4d96-a8e4-063e0272bd7b",
+          "expected_file": false,
+          "anchors": [
+            "A GOOD STUDENT",
+            "越界"
+          ],
+          "full_chunk_text": "# 数据结构 第4章 串 课件正文\n\n## 核对补充：引用本节结论时请保留适用条件\n\n本节为整理时依据原题和代码推导的校正说明，原PPTX未修改。\n\n- [DS-CH04-S006-CHECK] C语言空字符写作 `\\0`，不是原课件部分位置的 `/0`；它不同于空指针NULL，也不计入strlen的长度。空白串至少包含一个空格。\n- [DS-CH04-S018-CHECK] 从原始s=\"I AM A STUDENT\"分别计算，Replace得到\"I AM A WORKER\"，Concat表达式得到\"A GOOD STUDENT\"，其中空格要按原字符逐个计数。若先执行有副作用的Replace，再算原Concat，则SubString(s,7,8)越界。\n- [DS-CH04-S051-CHECK] m(n-m+1)是课件讨论的最坏成功匹配次数或只尝试完整窗口的BF口径；第51页while实现失败时可能继续比较不足m的尾段，例如S=\"aaaaa\"、T=\"aab\"共11次，不能把9次当此实现所有情形的上界。BF最坏时间复杂度仍为O(nm)。\n- [DS-CH04-S057-CHECK] 示例成功匹配的起始位置是6，函数返回i-m；退出时扫描指针i不是起始位置6。不要把返回值与退出时i混淆。"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "91589abc-78ab-4359-94c2-02bec3986366",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "练2：现有以下4个字符串：\na =‘BEI’ \tb =‘JING’    c = ‘BEIJING’     d = ‘BEI JING’\n问：① 他们各自的长度？\n② a是哪个串的子串？在主串中的位置是多少？\na =3，b =4，c = 7，d=8\na是c和d的子串，在c和d中的位置都是1\n练3：空串和空白串有无区别？\n答：有区别。空串(Null String)是指长度为零的串；\n而空白串(Blank  String),是指包含一个或多个空白字符‘  ’(空格键)的字符串.\n0个或多个\nS=’a_{1}a_{2}……a_{n}’\n练习：\n4.1  串类型的定义\n\n## 原课件第 18 页 [DS-CH04-S018]\n\n练习4：设 s =‘I AM A STUDENT’, t =‘GOOD’, q=‘WORKER’。\nStrLength(s) ＝\nStrLength(t) ＝\nSubString(s, 8, 7)=\nSubString(t, 2, 1)=\nIndex(s, ‘A’)=\nIndex(s, t,3)=\nReplace(s, ‘STUDENT’,q)=\n14\n4\n‘STUDENT’\n‘O’\n3\n0       （ s中没有t！）\n’I AM A WORKER’\n练习5：Concat(SubString(s,6,2), Concat(t,SubString(s,7,8))) ＝？\n‘A  GOOD  STUDENT’\n练习：\n4.1  串类型的定义\n\n## 原课件第 19 页 [DS-CH04-S019]\n\n4."
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "d073aa09-b4ed-47f5-aa56-baf6897565e3",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "前面的串是：abaab，前缀和后缀ab=ab，长度是2，所以next[6]=2+1=3（最大长度加1）\n4.3    串的模式匹配算法—KMP算法\n\n## 原课件第 71 页 [DS-CH04-S071]\n\n模式： a a a a b\nj：1 2 3 4 5\nnext[j]：  0 1 2 3 4\nS:              a a a b a a a a b\nT:              a a a a b\ni:               1 2 3 4 5 6 7 8 9\na a a a b\na a a a b\na a a a b\na a a a b\n讨论：next [ j ]是否完美无缺？\n答：未必，例如当      S=‘a b a a a a b’,T=‘a a a a b’时,仍有多余动作（参见P84改进算法,称为nextval [ j ] ）\n4.3    串的模式匹配算法—KMP算法\n\n## 原课件第 72 页 [DS-CH04-S072]\n\n当P_{j}==P_{next[j]}时，则\n因为S_{i} != P_{j}，所以 S_{i }!= P_{next[j]}\n因此，S_{i }没有必要继续与 P_{next}_{[j]}进行比较，\n而应该直接和P_{next}_{[j]}的下一个字符P_{next}_{[next[j]]}\n进行比较。\n因此，在计算next函数时，\n如果出现P_{j}=P_{next}_{[j] }= P_{k}\n则next[j]=next[k]=next[next[j]]\n修改算法见教材P84 算法4."
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "0e38a56f-43ce-44fb-94f9-c0806c56bef1",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "doc，原件第3页；原卷算法设计题第1题。\n\n原题：\n\n编写一个实现串的置换操作Replace (&S, T, V)的算法。\n\n**参考答案**：\n\n```cpp\n#include <string>\n#include <utility>\n\n// Replace non-overlapping occurrences in the original S, from left to right.\n// Do not rescan text inserted from V. T and V may alias S.\ninline bool Replace(std::string& S, const std::string& T, const std::string& V) {\n    if (T.empty()) return false;\n    std::string result;\n    std::size_t i = 0;\n    while (i < S.size()) {\n        if (T.size() <= S.size() - i && S.compare(i, T.size(), T) == 0) {\n            result.append(V);\n            i += T.size();\n        } else {\n            result.push_back(S[i]);\n            ++i;\n        }\n    }\n    S.swap(result);\n    return true;\n}\n```\n\n**解析与核对说明**：采用C++17的std::string作顺序串，容量动态增长。T必须非空，V允许为空。按原串从左向右扫描，每次匹配成功将V写入新结果并跳过原串中这段T；新插入的V不再参与匹配，所以T=\"a\"、V=\"aa\"不会无限循环，重叠出现也不会重复替换。构造完毕后才swap回S，允许T或V引用S；分配异常会抛出，S保留原值。"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "case": "置换边界",
+      "query": "Replace(S,T,V)算法如何避免反复替换新插入的V？T为空时如何处理？",
+      "index_version": "version-3",
+      "passed": true,
+      "anchor_coverage": {
+        "T.empty()": true,
+        "不再参与匹配": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "0e38a56f-43ce-44fb-94f9-c0806c56bef1",
+          "expected_file": true,
+          "anchors": [
+            "T.empty()",
+            "不再参与匹配"
+          ],
+          "full_chunk_text": "doc，原件第3页；原卷算法设计题第1题。\n\n原题：\n\n编写一个实现串的置换操作Replace (&S, T, V)的算法。\n\n**参考答案**：\n\n```cpp\n#include <string>\n#include <utility>\n\n// Replace non-overlapping occurrences in the original S, from left to right.\n// Do not rescan text inserted from V. T and V may alias S.\ninline bool Replace(std::string& S, const std::string& T, const std::string& V) {\n    if (T.empty()) return false;\n    std::string result;\n    std::size_t i = 0;\n    while (i < S.size()) {\n        if (T.size() <= S.size() - i && S.compare(i, T.size(), T) == 0) {\n            result.append(V);\n            i += T.size();\n        } else {\n            result.push_back(S[i]);\n            ++i;\n        }\n    }\n    S.swap(result);\n    return true;\n}\n```\n\n**解析与核对说明**：采用C++17的std::string作顺序串，容量动态增长。T必须非空，V允许为空。按原串从左向右扫描，每次匹配成功将V写入新结果并跳过原串中这段T；新插入的V不再参与匹配，所以T=\"a\"、V=\"aa\"不会无限循环，重叠出现也不会重复替换。构造完毕后才swap回S，允许T或V引用S；分配异常会抛出，S保留原值。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "3b34e09a-e847-47dc-b158-1f78bb44bdfc",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "例如：S = chater,T = rac,则执行 StrInsert (S, 4, T)\n得到 S = character\nStrDelete (&S, pos, len)\t(删除)\n初始条件：串 S 存在，且1≤pos≤StrLength(S)-len+1。\n操作结果：从串 S 中删除第 pos 个字符起长度为len的子串。\n例如：S=character，执行StrDelete (S, 3, 4) ，得到S= chter。\n基本操作：\n4.1  串类型的定义\n\n## 原课件第 11 页 [DS-CH04-S011]\n\nStrAssign (&T, chars)\t(串赋值)\n初始条件：chars 是字符串常量。\n操作结果：把 chars 赋为 T 的值。\nStrCopy (&T, S)\t(串复制)\n初始条件：串 S 存在。\n操作结果：由串 S 复制得串 T。\n基本操作：\n4.1  串类型的定义\nConcat (&T, S1, S2)\t(串联接)\n初始条件：串 S1 和 S2 存在。\n操作结果： T 为由串 S1 和串 S2 连接所得的串。\n例如： Concat( T, man, kind)\n求得  T = mankind\n\n## 原课件第 12 页 [DS-CH04-S012]\n\nReplace ( S, T, V)\t(串置换)\n初始条件：\n串 S, T 和 V 均已存在，且 T 是非空串。\n操作结果：\n用 V 替换主串 S 中出现的所有与（模式串）T 相等的不重叠的子串。"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "d073aa09-b4ed-47f5-aa56-baf6897565e3",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "前面的串是：abaab，前缀和后缀ab=ab，长度是2，所以next[6]=2+1=3（最大长度加1）\n4.3    串的模式匹配算法—KMP算法\n\n## 原课件第 71 页 [DS-CH04-S071]\n\n模式： a a a a b\nj：1 2 3 4 5\nnext[j]：  0 1 2 3 4\nS:              a a a b a a a a b\nT:              a a a a b\ni:               1 2 3 4 5 6 7 8 9\na a a a b\na a a a b\na a a a b\na a a a b\n讨论：next [ j ]是否完美无缺？\n答：未必，例如当      S=‘a b a a a a b’,T=‘a a a a b’时,仍有多余动作（参见P84改进算法,称为nextval [ j ] ）\n4.3    串的模式匹配算法—KMP算法\n\n## 原课件第 72 页 [DS-CH04-S072]\n\n当P_{j}==P_{next[j]}时，则\n因为S_{i} != P_{j}，所以 S_{i }!= P_{next[j]}\n因此，S_{i }没有必要继续与 P_{next}_{[j]}进行比较，\n而应该直接和P_{next}_{[j]}的下一个字符P_{next}_{[next[j]]}\n进行比较。\n因此，在计算next函数时，\n如果出现P_{j}=P_{next}_{[j] }= P_{k}\n则next[j]=next[k]=next[next[j]]\n修改算法见教材P84 算法4."
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "03d75c61-5716-4fa4-ae6f-87eedc8d2dd5",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "//子串结束，说明匹配成功\nelse return 0;\n}//Index\n思考：\n（1）i<=S[0]可以改成S[0]-T[0]+1吗？\n（2）匹配成功时，循环执行的次数最多是多少？\n4.3    串的模式匹配算法—BF算法\nS=‘a b a b c a a b a c b a b’\nT=‘a b c a c’\n例如：S=\"aaaaaaaaaaab\"\nT=\"aaab\"\n\n## 原课件第 52 页 [DS-CH04-S052]\n\n思考：\n（1）i<=S[0]可以改成S[0]-T[0]+1吗？\n（2）匹配成功时，循环执行的次数最多是多少？\n答：\n（1）不能改，i是S和T比较时新一轮的比较开始位置，而且在后面的比较过程中还要i++。\n（2） (n-m+1)*m\n4."
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "91589abc-78ab-4359-94c2-02bec3986366",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "练2：现有以下4个字符串：\na =‘BEI’ \tb =‘JING’    c = ‘BEIJING’     d = ‘BEI JING’\n问：① 他们各自的长度？\n② a是哪个串的子串？在主串中的位置是多少？\na =3，b =4，c = 7，d=8\na是c和d的子串，在c和d中的位置都是1\n练3：空串和空白串有无区别？\n答：有区别。空串(Null String)是指长度为零的串；\n而空白串(Blank  String),是指包含一个或多个空白字符‘  ’(空格键)的字符串.\n0个或多个\nS=’a_{1}a_{2}……a_{n}’\n练习：\n4.1  串类型的定义\n\n## 原课件第 18 页 [DS-CH04-S018]\n\n练习4：设 s =‘I AM A STUDENT’, t =‘GOOD’, q=‘WORKER’。\nStrLength(s) ＝\nStrLength(t) ＝\nSubString(s, 8, 7)=\nSubString(t, 2, 1)=\nIndex(s, ‘A’)=\nIndex(s, t,3)=\nReplace(s, ‘STUDENT’,q)=\n14\n4\n‘STUDENT’\n‘O’\n3\n0       （ s中没有t！）\n’I AM A WORKER’\n练习5：Concat(SubString(s,6,2), Concat(t,SubString(s,7,8))) ＝？\n‘A  GOOD  STUDENT’\n练习：\n4.1  串类型的定义\n\n## 原课件第 19 页 [DS-CH04-S019]\n\n4."
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "case": "递归反序",
+      "query": "DS-CH04-HW45-ALG-002 字符串反序，空串如何处理？递归时间和空间复杂度是什么？",
+      "index_version": "version-3",
+      "passed": true,
+      "anchor_coverage": {
+        "reverseRecursive": true,
+        "递归栈O(n)": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "e27d57b7-5e0e-42d5-9c02-6e87a1e4aed3",
+          "expected_file": true,
+          "anchors": [
+            "reverseRecursive",
+            "递归栈O(n)"
+          ],
+          "full_chunk_text": "构造完毕后才swap回S，允许T或V引用S；分配异常会抛出，S保留原值。设n=|S|、m=|T|、L为结果长，直接比较的最坏时间O(nm+L)，辅助空间O(L)，需要处理空串、无匹配、相邻匹配、重叠、删除、增长及别名。这里处理单字节字符或字节串；不能据此声称UTF-8汉字按字节反序或任意字符切分也安全。代码已按C++17编译并通过实际随机和边界检查。\n\n**依据**：DS-CH04-S012；第25—30页顺序串与动态空间思路。\n\n## 算法设计题 原第2题 [DS-CH04-HW45-ALG-002]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第3页；原卷算法设计题第2题。\n\n原题：\n\n写出将字符串反序的递推或递归算法，例如字符串为“abcsxw”，反序为“wxscba”\n\n**参考答案**：\n\n答案要点：reverseRecursive递归交换首尾，时间Θ(n)、递归栈O(n)；reverseIterative迭代交换，时间Θ(n)、辅助空间O(1)。空串直接返回，例abcsxw反序为wxscba。\n\n```cpp\n#include <string>\n#include <utility>\n\ninline void reverseRange(std::string& S, std::size_t left, std::size_t right) {\n    if (left >= right) return;"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "b334738e-31ba-4d45-ac1f-bff7a05f4bad",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "题目未限定实现和成功/失败时，应说明这一口径。\n\n**依据**：DS-CH04-S051—S053。\n\n## 单选题 原第1题 [DS-CH04-HW45-SC-001]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷单选题第1题。\n\n原题：\n\n串是一种特殊的线性表，其特殊性体现在：\n   Ａ．可以顺序存储       Ｂ．数据元素是一个字符      \nＣ．可以链式存储        Ｄ．数据元素可以是多个字符\n\n**参考答案**：\n\nB。\n\n**解析与核对说明**：串是数据元素为单个字符的特殊线性表。能否顺序或链式存储不是区分串与一般线性表的关键。\n\n**依据**：DS-CH04-S004、S006、S016。\n\n## 单选题 原第2题 [DS-CH04-HW45-SC-002]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷单选题第2题。\n\n原题：\n\n设有两个串p和q，求q在p中首次出现的位置的运算称作：\n   Ａ．连接      Ｂ．模式匹配    Ｃ．求子串       Ｄ．求串长\n\n**参考答案**：\n\nB，模式匹配。"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "4bc05f05-8479-4852-9ff7-91b5b397f8e7",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "# 第4章 串：合并作业参考答案与解析\n\n整理日期：2026-11-01；资料版本：v0.1.0。来源为同一份第4、5章合并作业，现按主题分章，保留原题号和稳定ID，不重新连续编号。答案为辅助编写并推导核对的学习参考，不是教师提供的标准答案；含题设修正和条件说明。原卷共20道主问题，两章各10道，不重复入库。\n\n## 填空题 原第1题 [DS-CH04-HW45-FI-001]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第1题。\n\n原题：\n\n称为空串；                               称为空白串。\n\n**参考答案**：\n\n长度为0、没有任何字符的串；由一个或多个空格字符组成的串。\n\n**解析与核对说明**：空串记为 \"\"，长度为0；空白串如 \" \"、\"   \"，长度分别为1、3。C字符串结尾的空字符 \\0 不计入串长，不能把它当成空格。\n\n**依据**：DS-CH04-S006、S017。\n\n## 填空题 原第2题 [DS-CH04-HW45-FI-002]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第2题。\n\n原题：\n\n设S=“A;/document/Mary.doc”，则strlen(s)=                ,"
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "chunk_id": "1b816111-198c-4fc3-8779-889e0c1f35ca",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "**依据**：DS-CH04-S034、S035。\n\n## 填空题 原第4题 [DS-CH04-HW45-FI-004]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第4题。\n\n原题：\n\n若n为主串长，m为子串长，则串的古典（朴素）匹配算法最坏的情况下需要比较字符的总次数为   \n          。\n\n**参考答案**：\n\n按课件的常用最坏成功匹配口径，填 m(n-m+1)；最坏时间复杂度写 O(nm)。\n\n**解析与核对说明**：条件是1≤m≤n，从主串第1位开始，前n-m次尝试都比较到模式最后一位才失配，最后一次完整匹配。例如S=a^(n-1)b，T=a^(m-1)b。共n-m+1次尝试，每次m次比较。课件第52—53页实际解释的是这种查找成功情形。若要求第51页代码在失败查找中的精确全局最大比较次数，不能无条件套此乘积：S=\"aaaaa\"、T=\"aab\"时，该while实现还会比较不足m的尾段，共11次，大于3×3=9；复杂度仍为O(nm)。题目未限定实现和成功/失败时，应说明这一口径。\n\n**依据**：DS-CH04-S051—S053。"
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH04_课件正文.md",
+          "chunk_id": "b17f3889-046c-4d96-a8e4-063e0272bd7b",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "# 数据结构 第4章 串 课件正文\n\n## 核对补充：引用本节结论时请保留适用条件\n\n本节为整理时依据原题和代码推导的校正说明，原PPTX未修改。\n\n- [DS-CH04-S006-CHECK] C语言空字符写作 `\\0`，不是原课件部分位置的 `/0`；它不同于空指针NULL，也不计入strlen的长度。空白串至少包含一个空格。\n- [DS-CH04-S018-CHECK] 从原始s=\"I AM A STUDENT\"分别计算，Replace得到\"I AM A WORKER\"，Concat表达式得到\"A GOOD STUDENT\"，其中空格要按原字符逐个计数。若先执行有副作用的Replace，再算原Concat，则SubString(s,7,8)越界。\n- [DS-CH04-S051-CHECK] m(n-m+1)是课件讨论的最坏成功匹配次数或只尝试完整窗口的BF口径；第51页while实现失败时可能继续比较不足m的尾段，例如S=\"aaaaa\"、T=\"aab\"共11次，不能把9次当此实现所有情形的上界。BF最坏时间复杂度仍为O(nm)。\n- [DS-CH04-S057-CHECK] 示例成功匹配的起始位置是6，函数返回i-m；退出时扫描指针i不是起始位置6。不要把返回值与退出时i混淆。"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "case": "题目数量",
+      "query": "第五章数组和广义表的作业和练习有多少道题？来自哪份文件？",
+      "index_version": "version-1",
+      "passed": true,
+      "anchor_coverage": {
+        "10道主问题": true,
+        "5、6、7、8": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "00_DS_CH05_章节导航与题目统计.md",
+          "chunk_id": "60ce1024-202e-406f-bc8e-355e9472f277",
+          "expected_file": true,
+          "anchors": [
+            "10道主问题"
+          ],
+          "full_chunk_text": "# 第5章 数组和广义表 章节导航与题目统计\n\n课程：数据结构；知识库：数据结构_第5章_数组和广义表；日期：2026-11-01；版本：v0.1.0。\n\n**本章当前已提供的作业习题共10道主问题。** 只统计第4、5章 串、数组和广义表-作业.doc中归属本章的正式顶层题号；按出现次数计数，不跨原卷去重；小问、空格、选项、参考答案、课件示例及聊天生成题不重复计数。这是当前已提供资料的完整统计，不代表整学期所有习题。合并原卷共20道：第四章10道、第五章10道。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "447b3132-84e7-48bf-ad9d-f7e073906736",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "b), (c,d) )\n5.5 广义表的存储结构\n\n## 原课件第 51 页 [DS-CH05-S051]\n\n提问：\n1.下面说法不正确的是(     )。 【南京理工大学 2001 一、3 （1.5分）】\nA. 广义表的表头总是一个广义表        B. 广义表的表尾总是一个广义表\nC. 广义表难以用顺序存储结构          D. 广义表可以是一个多层次的结构\n5.5 广义表的存储结构\n\n## 原课件第 52 页 [DS-CH05-S052]\n\n另外一种存储方法：\n1.原子结点：                                    2.表结点\ntp\natom\ntag=0\n标志域  　　值域　表尾指针\n指向下一结点\ntp\natom\ntag=1\n标志域  　　值域　表尾指针\n指向下一结点\n5.5 广义表的存储结构\n\n## 原课件第 53 页 [DS-CH05-S053]"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "8794d785-b482-4e75-ac3c-596cd8df907e",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "# 第5章 数组和广义表：合并作业参考答案与解析\n\n整理日期：2026-11-01；资料版本：v0.1.0。来源为同一份第4、5章合并作业，现按主题分章，保留原题号和稳定ID，不重新连续编号。答案为辅助编写并推导核对的学习参考，不是教师提供的标准答案；含题设修正和条件说明。原卷共20道主问题，两章各10道，不重复入库。\n\n## 填空题 原第5题 [DS-CH05-HW45-FI-005]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第5题。\n\n原题：\n\n假设有二维数组A_{6×8}，每个元素用相邻的6个字节存储，存储器按字节编址。已知A的起始存储位置（基地址）为1000，则数组A的体积（存储量）为            ；末尾元素A_{57}的第一个字节地址 \n为        ；若按行存储时，元素A_{14}的第一个字节地址为            ；若按列存储时，元素A_{47}的第一个字节地址为              。\n\n**参考答案**：\n\n288字节；1282；1072；1276。\n\n**解析与核对说明**：由“末尾A_{57}”可判断本题隐含下标从0开始：A[0..5,0.."
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "47929a47-7917-4c6f-af51-50be9c7ef078",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "表结点——存储广义表；原子结点——存储单元素\n5.5 广义表的存储结构\n\n## 原课件第 48 页 [DS-CH05-S048]\n\ntag=1      hp        tp\ntag=0            data\n表结点                               原子结点\ntag：区分表结点和元素结点的标志；\nhp：指向表头结点的指针；\ntp：指向表尾结点的指针；\ndata：数据域，存放单元素。\n广义表的存储结构——头尾表示法\n结点结构\n5.5 广义表的存储结构\n\n## 原课件第 49 页 [DS-CH05-S049]\n\n① A =( )\n^\n1\n0 | e\n③ C =( a ,( b , c , d ) )\n1\n^\n1\n1\n0 | a\n0 | b\n0 | d\n0 | c\n1\n^\n1\n例：\n② B=( e )\nA=NULL\n^\n^\n1\n5.5 广义表的存储结构\n\n## 原课件第 50 页 [DS-CH05-S050]\n\n⑤  E=(a, E)\n④  D=( A , B ,C )＝(( ),(e),(a,(b,c,d)))\n0 | a\n^\n1\n1\n^\n1\n0 | e\n1\n^\n1\n1\n^\n1\n1\n0 | a\n0 | b\n0 | d\n0 | c\n1\n^\n1\n^\n1\n（参见教材P109图）\n提问：F=( (a,b), (c,d) )\n5."
+        },
+        {
+          "rank": 5,
+          "file": "00_DS_CH05_章节导航与题目统计.md",
+          "chunk_id": "3b8157c4-786b-4636-8c41-1213dd8e7631",
+          "expected_file": true,
+          "anchors": [
+            "5、6、7、8"
+          ],
+          "full_chunk_text": "这是当前已提供资料的完整统计，不代表整学期所有习题。合并原卷共20道：第四章10道、第五章10道。\n\n| 原题型 | 本章原题号 | 主问题数 |\n|---|---|---:|\n| 填空题 | 5、6、7、8 | 4 |\n| 单选题 | 4、5、6、7 | 4 |\n| 计算题 | 2、3 | 2 |\n\n## 逐题索引\n\n| 题目ID | 原题型/题号 | 原页码 |\n|---|---|---|\n| DS-CH05-HW45-FI-005 | 填空题第5题 | 1 |\n| DS-CH05-HW45-FI-006 | 填空题第6题 | 1 |\n| DS-CH05-HW45-FI-007 | 填空题第7题 | 1 |\n| DS-CH05-HW45-FI-008 | 填空题第8题 | 1 |\n| DS-CH05-HW45-SC-004 | 单选题第4题 | 1—2 |\n| DS-CH05-HW45-SC-005 | 单选题第5题 | 2 |\n| DS-CH05-HW45-SC-006 | 单选题第6题 | 2 |\n| DS-CH05-HW45-SC-007 | 单选题第7题 | 2 |\n| DS-CH05-HW45-CAL-002 | 计算题第2题 | 2—3 |\n| DS-CH05-HW45-CAL-003 | 计算题第3题 | 3 |\n\n## 资料导航\n\n- 课件正文：DS_CH05_课件正文."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "case": "列优先2048",
+      "query": "DS-CH05-HW45-FI-006，a[1..60,1..70]基址2048，a[32,58]列优先地址是多少？",
+      "index_version": "version-1",
+      "passed": true,
+      "anchor_coverage": {
+        "8950": true,
+        "3451": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "e538e4c3-8946-46df-a0ee-55aaccd3aa90",
+          "expected_file": true,
+          "anchors": [
+            "8950",
+            "3451"
+          ],
+          "full_chunk_text": "**解析与核对说明**：由“末尾A_{57}”可判断本题隐含下标从0开始：A[0..5,0..7]。总量6×8×6=288；末元素首地址1000+(48-1)×6=1282。按行A[1,4]：1000+(1×8+4)×6=1072；按列A[4,7]：1000+(7×6+4)×6=1276。末元素最后一个字节是1287，不能与首地址1282混淆。\n\n**依据**：DS-CH05-S009—S011。\n\n## 填空题 原第6题 [DS-CH05-HW45-FI-006]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第6题。\n\n原题：\n\n设数组a[1…60, 1…70]的基地址为2048，每个元素占2个存储单元，若以列序为主序顺序存储，则元素a[32,58]的存储地址为              。\n\n**参考答案**：\n\n8950。\n\n**解析与核对说明**：列优先时前面有(58-1)×60+(32-1)=3451个元素，地址2048+3451×2=8950。行下标和列下标均从1开始。\n\n**依据**：DS-CH05-S010、S011。\n\n## 填空题 原第7题 [DS-CH05-HW45-FI-007]\n\n来源：第4、5章 串、数组和广义表-作业."
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "c4f36368-deb4-4070-a289-2cf5845eb2b4",
+          "expected_file": true,
+          "anchors": [
+            "8950",
+            "3451"
+          ],
+          "full_chunk_text": "B, C均不对\n\n**参考答案**：\n\nA，16902。\n\n**解析与核对说明**：列优先偏移元素数为(58-1)×60+(32-1)=3451，首地址10000+3451×2=16902。本题基地址是10000，不能套用填空第6题基地址2048得到8950。\n\n**依据**：DS-CH05-S010、S011。\n\n## 单选题 原第5题 [DS-CH05-HW45-SC-005]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷单选题第5题。\n\n原题：\n\n设矩阵A是一个对称矩阵，为了节省存储，将其下三角部分（如       \n右图所示）按行序存放在一维数组B[ 1, n(n+1)/2 ]中，对下三角部            \n分中任一元素a_{i,j}(i≤j), 在一维数组B中下标k的值是：\nＡ．i(i-1)/2+j-1        Ｂ．i(i-1)/2+j     \nＣ．i(i+1)/2+j-1        Ｄ．i(i+1)/2+j\n\n原件右图转写：下三角按行依次为a11；a21,a22；…；an1,…,ann。原文i≤j保留，矛盾见答案校正。\n\n**参考答案**：\n\n按“下三角、B从1开始”的题意，选B：k=i(i-1)/2+j；需把原题i≤j改为i≥j。"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "2855197a-b237-403b-9ff1-e39d4c08eb3b",
+          "expected_file": false,
+          "anchors": [
+            "8950"
+          ],
+          "full_chunk_text": "按列存储的公式是？\nLoc(a_{ij})=Loc(a_{11})+[(j-1)*m+(i-1)]*K  （尽管是方阵，但公式仍不同）\n例1〖软考题〗：一个二维数组A，行下标的范围是1到6，列下标的范围是0到7，每个数组元素用相邻的6个字节存储，存储器按字节编址。那么，这个数组的体积是         个字节。\n288\n例3：〖00年计算机系考研题〗设数组a[1…60, 1…70]的基地址为2048，每个元素占2个存储单元，若以列序为主序顺序存储，则元素a[32,58]的存储地址为            。\n8950\nLOC(a_{ij})=LOC(a_{c}_{1}_{，}_{c}_{2})+[(j-c2)*(d1-c1+1)+i-c_{1})]*L\n得：LOC(a_{32,58})=2048+[(58-1)*(60-1+1)+32-1)]*2＝8950\n数组中第一个元素的地址是1000，若以行序为主序顺序存储元素A[5,6]的地址是多少？\n1000+(4*8+6)*6= 10228\n5.2 数组的顺序存储表示和实现\n\n## 原课件第 12 页 [DS-CH05-S012]\n\n提问：\n1."
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "8794d785-b482-4e75-ac3c-596cd8df907e",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "# 第5章 数组和广义表：合并作业参考答案与解析\n\n整理日期：2026-11-01；资料版本：v0.1.0。来源为同一份第4、5章合并作业，现按主题分章，保留原题号和稳定ID，不重新连续编号。答案为辅助编写并推导核对的学习参考，不是教师提供的标准答案；含题设修正和条件说明。原卷共20道主问题，两章各10道，不重复入库。\n\n## 填空题 原第5题 [DS-CH05-HW45-FI-005]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第5题。\n\n原题：\n\n假设有二维数组A_{6×8}，每个元素用相邻的6个字节存储，存储器按字节编址。已知A的起始存储位置（基地址）为1000，则数组A的体积（存储量）为            ；末尾元素A_{57}的第一个字节地址 \n为        ；若按行存储时，元素A_{14}的第一个字节地址为            ；若按列存储时，元素A_{47}的第一个字节地址为              。\n\n**参考答案**：\n\n288字节；1282；1072；1276。\n\n**解析与核对说明**：由“末尾A_{57}”可判断本题隐含下标从0开始：A[0..5,0.."
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "99ddd5c4-838b-4ade-bb8b-ab1aa6712130",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "存储器按字节编址。假设存储数组元素A[0,1]的第一个字节的地址是0。\n存储数组A的最后一个元素的第一个字节的地址是   A   。若按行存储，则A[3,5]和A[5,3]的第一个字节的地址分别是  B   和  C   。若按列存储，则A[7,1]和A[2,4]的第一个字节的地址分别是  D   和  E   。\n供选择的答案\nA～E：①28   ② 44   ③ 76   ④ 92    ⑤ 108   ⑥ 116   ⑦ 132   ⑧ 176    ⑨ 184   ⑩ 188\n答案：A＝          B＝            C＝             D＝                 E=\n\n**参考答案**：\n\nA=⑧176，B=③76，C=⑤108，D=①28，E=⑥116。\n\n**解析与核对说明**：数组A[0..8,1..5]有9行5列，单元4字节、基址0。末元素偏移(45-1)×4=176；行优先A[3,5]=(3×5+4)×4=76，A[5,3]=(5×5+2)×4=108；列优先A[7,1]=(0×9+7)×4=28，A[2,4]=(3×9+2)×4=116。"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "case": "列优先10000",
+      "query": "DS-CH05-HW45-SC-004，基地址10000，a[32,58]列优先地址是多少？",
+      "index_version": "version-1",
+      "passed": true,
+      "anchor_coverage": {
+        "16902": true,
+        "3451": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "e538e4c3-8946-46df-a0ee-55aaccd3aa90",
+          "expected_file": true,
+          "anchors": [
+            "3451"
+          ],
+          "full_chunk_text": "**解析与核对说明**：由“末尾A_{57}”可判断本题隐含下标从0开始：A[0..5,0..7]。总量6×8×6=288；末元素首地址1000+(48-1)×6=1282。按行A[1,4]：1000+(1×8+4)×6=1072；按列A[4,7]：1000+(7×6+4)×6=1276。末元素最后一个字节是1287，不能与首地址1282混淆。\n\n**依据**：DS-CH05-S009—S011。\n\n## 填空题 原第6题 [DS-CH05-HW45-FI-006]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第6题。\n\n原题：\n\n设数组a[1…60, 1…70]的基地址为2048，每个元素占2个存储单元，若以列序为主序顺序存储，则元素a[32,58]的存储地址为              。\n\n**参考答案**：\n\n8950。\n\n**解析与核对说明**：列优先时前面有(58-1)×60+(32-1)=3451个元素，地址2048+3451×2=8950。行下标和列下标均从1开始。\n\n**依据**：DS-CH05-S010、S011。\n\n## 填空题 原第7题 [DS-CH05-HW45-FI-007]\n\n来源：第4、5章 串、数组和广义表-作业."
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "c4f36368-deb4-4070-a289-2cf5845eb2b4",
+          "expected_file": true,
+          "anchors": [
+            "16902",
+            "3451"
+          ],
+          "full_chunk_text": "B, C均不对\n\n**参考答案**：\n\nA，16902。\n\n**解析与核对说明**：列优先偏移元素数为(58-1)×60+(32-1)=3451，首地址10000+3451×2=16902。本题基地址是10000，不能套用填空第6题基地址2048得到8950。\n\n**依据**：DS-CH05-S010、S011。\n\n## 单选题 原第5题 [DS-CH05-HW45-SC-005]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷单选题第5题。\n\n原题：\n\n设矩阵A是一个对称矩阵，为了节省存储，将其下三角部分（如       \n右图所示）按行序存放在一维数组B[ 1, n(n+1)/2 ]中，对下三角部            \n分中任一元素a_{i,j}(i≤j), 在一维数组B中下标k的值是：\nＡ．i(i-1)/2+j-1        Ｂ．i(i-1)/2+j     \nＣ．i(i+1)/2+j-1        Ｄ．i(i+1)/2+j\n\n原件右图转写：下三角按行依次为a11；a21,a22；…；an1,…,ann。原文i≤j保留，矛盾见答案校正。\n\n**参考答案**：\n\n按“下三角、B从1开始”的题意，选B：k=i(i-1)/2+j；需把原题i≤j改为i≥j。"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "b1e1bd2b-3ee0-47ac-8995-ac6655506e56",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "3]=(5×5+2)×4=108；列优先A[7,1]=(0×9+7)×4=28，A[2,4]=(3×9+2)×4=116。虽然在单选部分，此题有A—E五个组合选填位置，仍按原顶层题号计1道主问题。\n\n**依据**：DS-CH05-S010。\n\n## 单选题 原第7题 [DS-CH05-HW45-SC-007]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷单选题第7题。\n\n原题：\n\n从供选择的答案中，选出应填入下面叙述   ？   内的最确切的解答，把相应编号写在答卷的对应栏内。\n有一个二维数组A，行下标的范围是1到6，列下标的范围是0到7，每个数组元素用相邻的6个字节存储，存储器按字节编址。那么，这个数组的体积是   A   个字节。假设存储数组元素A[1,0]的第一个字节的地址是0，则存储数组A的最后一个元素的第一个字节的地址是   B   。若按行存储，则A[2,4]的第一个字节的地址是  C   。若按列存储，则A[5,7]的第一个字节的地址是  D   。"
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "2855197a-b237-403b-9ff1-e39d4c08eb3b",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "按列存储的公式是？\nLoc(a_{ij})=Loc(a_{11})+[(j-1)*m+(i-1)]*K  （尽管是方阵，但公式仍不同）\n例1〖软考题〗：一个二维数组A，行下标的范围是1到6，列下标的范围是0到7，每个数组元素用相邻的6个字节存储，存储器按字节编址。那么，这个数组的体积是         个字节。\n288\n例3：〖00年计算机系考研题〗设数组a[1…60, 1…70]的基地址为2048，每个元素占2个存储单元，若以列序为主序顺序存储，则元素a[32,58]的存储地址为            。\n8950\nLOC(a_{ij})=LOC(a_{c}_{1}_{，}_{c}_{2})+[(j-c2)*(d1-c1+1)+i-c_{1})]*L\n得：LOC(a_{32,58})=2048+[(58-1)*(60-1+1)+32-1)]*2＝8950\n数组中第一个元素的地址是1000，若以行序为主序顺序存储元素A[5,6]的地址是多少？\n1000+(4*8+6)*6= 10228\n5.2 数组的顺序存储表示和实现\n\n## 原课件第 12 页 [DS-CH05-S012]\n\n提问：\n1."
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "99ddd5c4-838b-4ade-bb8b-ab1aa6712130",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "存储器按字节编址。假设存储数组元素A[0,1]的第一个字节的地址是0。\n存储数组A的最后一个元素的第一个字节的地址是   A   。若按行存储，则A[3,5]和A[5,3]的第一个字节的地址分别是  B   和  C   。若按列存储，则A[7,1]和A[2,4]的第一个字节的地址分别是  D   和  E   。\n供选择的答案\nA～E：①28   ② 44   ③ 76   ④ 92    ⑤ 108   ⑥ 116   ⑦ 132   ⑧ 176    ⑨ 184   ⑩ 188\n答案：A＝          B＝            C＝             D＝                 E=\n\n**参考答案**：\n\nA=⑧176，B=③76，C=⑤108，D=①28，E=⑥116。\n\n**解析与核对说明**：数组A[0..8,1..5]有9行5列，单元4字节、基址0。末元素偏移(45-1)×4=176；行优先A[3,5]=(3×5+4)×4=76，A[5,3]=(5×5+2)×4=108；列优先A[7,1]=(0×9+7)×4=28，A[2,4]=(3×9+2)×4=116。"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "case": "三角题设",
+      "query": "DS-CH05-HW45-SC-005 下三角i≤j是否有误？B从1开始为什么选B？",
+      "index_version": "version-1",
+      "passed": true,
+      "anchor_coverage": {
+        "i≥j": true,
+        "j(j-1)/2+i": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "c4f36368-deb4-4070-a289-2cf5845eb2b4",
+          "expected_file": true,
+          "anchors": [
+            "i≥j"
+          ],
+          "full_chunk_text": "B, C均不对\n\n**参考答案**：\n\nA，16902。\n\n**解析与核对说明**：列优先偏移元素数为(58-1)×60+(32-1)=3451，首地址10000+3451×2=16902。本题基地址是10000，不能套用填空第6题基地址2048得到8950。\n\n**依据**：DS-CH05-S010、S011。\n\n## 单选题 原第5题 [DS-CH05-HW45-SC-005]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷单选题第5题。\n\n原题：\n\n设矩阵A是一个对称矩阵，为了节省存储，将其下三角部分（如       \n右图所示）按行序存放在一维数组B[ 1, n(n+1)/2 ]中，对下三角部            \n分中任一元素a_{i,j}(i≤j), 在一维数组B中下标k的值是：\nＡ．i(i-1)/2+j-1        Ｂ．i(i-1)/2+j     \nＣ．i(i+1)/2+j-1        Ｄ．i(i+1)/2+j\n\n原件右图转写：下三角按行依次为a11；a21,a22；…；an1,…,ann。原文i≤j保留，矛盾见答案校正。\n\n**参考答案**：\n\n按“下三角、B从1开始”的题意，选B：k=i(i-1)/2+j；需把原题i≤j改为i≥j。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "25c592f8-755d-4540-a3fb-2fb2e14e8849",
+          "expected_file": true,
+          "anchors": [
+            "j(j-1)/2+i"
+          ],
+          "full_chunk_text": "**解析与核对说明**：下三角含主对角线，条件应为1≤j≤i≤n。前i-1行共有1+…+(i-1)=i(i-1)/2个元素，第i行的第j个元素在B中的1起始下标为i(i-1)/2+j。原卷写成i≤j，与“下三角”和右图矛盾。若严格保留i≤j，则应先用对称性映射到a_{j,i}，公式为j(j-1)/2+i，现有选项对一般i,j没有正确项。通式：r=max(i,j)、c=min(i,j)，k=r(r-1)/2+c；B从0开始时再减1。\n\n**依据**：DS-CH05-S019；合并作业原件第2页。\n\n## 单选题 原第6题 [DS-CH05-HW45-SC-006]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷单选题第6题。\n\n原题：\n\n从供选择的答案中，选出应填入下面叙述   ？  内的最确切的解答，把相应编号写在答卷的对应栏内。\n有一个二维数组A，行下标的范围是0到8，列下标的范围是1到5，每个数组元素用相邻的4个字节存储。存储器按字节编址。假设存储数组元素A[0,1]的第一个字节的地址是0。"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "b1e1bd2b-3ee0-47ac-8995-ac6655506e56",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "3]=(5×5+2)×4=108；列优先A[7,1]=(0×9+7)×4=28，A[2,4]=(3×9+2)×4=116。虽然在单选部分，此题有A—E五个组合选填位置，仍按原顶层题号计1道主问题。\n\n**依据**：DS-CH05-S010。\n\n## 单选题 原第7题 [DS-CH05-HW45-SC-007]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷单选题第7题。\n\n原题：\n\n从供选择的答案中，选出应填入下面叙述   ？   内的最确切的解答，把相应编号写在答卷的对应栏内。\n有一个二维数组A，行下标的范围是1到6，列下标的范围是0到7，每个数组元素用相邻的6个字节存储，存储器按字节编址。那么，这个数组的体积是   A   个字节。假设存储数组元素A[1,0]的第一个字节的地址是0，则存储数组A的最后一个元素的第一个字节的地址是   B   。若按行存储，则A[2,4]的第一个字节的地址是  C   。若按列存储，则A[5,7]的第一个字节的地址是  D   。"
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "b5758a8b-2afc-476f-a88c-394cec4e1178",
+          "expected_file": false,
+          "anchors": [
+            "i≥j"
+          ],
+          "full_chunk_text": "# 数据结构 第5章 数组和广义表 课件正文\n\n## 核对补充：公式、下标与原课件笔误\n\n本节为人工核对与推导补充，原PPTX未修改，逐页文字仍保留原文。\n\n- [DS-CH05-S010-CHECK] A[c1..d1,c2..d2]，行数R=d1-c1+1、列数C=d2-c2+1、单元长度w，基地址B=LOC(A[c1,c2])。行优先：B+((i-c1)C+(j-c2))w；列优先：B+((j-c2)R+(i-c1))w。注意基址对应首元素和实际上下界，不混用0、1起始下标。\n- [DS-CH05-S011-CHECK] 原课件写1000+(4*8+6)*6=10228，算术有误，正确为1228。该例行下标从1、列下标从0开始，A[5,6]对应4×8+6个先行元素。另例基址2048、a[32,58]的列优先地址8950是正确值。\n- [DS-CH05-S019-CHECK] 对称矩阵按行存下三角时，令r=max(i,j)、c=min(i,j)。一维下标从1开始为k=r(r-1)/2+c；从0开始再减1。合并作业单选第5题写“下三角i≤j”有矛盾，应改i≥j后选B；按原i≤j处理则公式交换i,j，原选项无一般正确项。"
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "b311c47b-3f2a-478d-8e54-e77cf6290468",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "**参考答案**：\n\n采用1起始行列号，首行记“行数 列数 非零元个数”，其余按行优先排列。\n\n（1）\n```text\n8 8 5\n3 2 3\n3 6 8\n5 4 6\n7 8 5\n8 1 2\n```\n\n（2）\n```text\n6 6 4\n1 6 -2\n2 5 9\n4 3 5\n6 5 3\n```\n\n**解析与核对说明**：逐行扫描原图，只记录非零元素的位置和值。第一张为8×8、5个非零元，第二张为6×6、4个非零元，负号-2必须保留。表头是维度与数量信息，不增加非零元计数。矩阵已与原件第3页图片逐行核对，并执行三元组往返还原检查。\n\n**依据**：DS-CH05-S021—S024；合并作业原件第3页。\n\n## 计算题 原第3题 [DS-CH05-HW45-CAL-003]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第3页；原卷计算题第3题。\n\n原题：\n\n下列各三元组表分别表示一个稀疏矩阵，试写出它们的稀疏矩阵。\n\n**原件第3页三元组图片的人工核对转写**：首行为“行数、列数、非零元个数”，不是一个非零元素。"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "case": "图片矩阵",
+      "query": "DS-CH05-HW45-CAL-002 原图8行8列和6行6列稀疏矩阵分别如何写三元组？",
+      "index_version": "version-1",
+      "passed": true,
+      "anchor_coverage": {
+        "8 8 5": true,
+        "1 6 -2": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "b311c47b-3f2a-478d-8e54-e77cf6290468",
+          "expected_file": true,
+          "anchors": [
+            "8 8 5",
+            "1 6 -2"
+          ],
+          "full_chunk_text": "**参考答案**：\n\n采用1起始行列号，首行记“行数 列数 非零元个数”，其余按行优先排列。\n\n（1）\n```text\n8 8 5\n3 2 3\n3 6 8\n5 4 6\n7 8 5\n8 1 2\n```\n\n（2）\n```text\n6 6 4\n1 6 -2\n2 5 9\n4 3 5\n6 5 3\n```\n\n**解析与核对说明**：逐行扫描原图，只记录非零元素的位置和值。第一张为8×8、5个非零元，第二张为6×6、4个非零元，负号-2必须保留。表头是维度与数量信息，不增加非零元计数。矩阵已与原件第3页图片逐行核对，并执行三元组往返还原检查。\n\n**依据**：DS-CH05-S021—S024；合并作业原件第3页。\n\n## 计算题 原第3题 [DS-CH05-HW45-CAL-003]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第3页；原卷计算题第3题。\n\n原题：\n\n下列各三元组表分别表示一个稀疏矩阵，试写出它们的稀疏矩阵。\n\n**原件第3页三元组图片的人工核对转写**：首行为“行数、列数、非零元个数”，不是一个非零元素。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "f061b208-83bf-4540-a54e-1903b2ff9305",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "## 填空题 原第7题 [DS-CH05-HW45-FI-007]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第7题。\n\n原题：\n\n三元素组表中的每个结点对应于稀疏矩阵的一个非零元素，它包含有三个数据项，分别表示该元素\n的         、             和            。\n\n**参考答案**：\n\n行号、列号、元素值。\n\n**解析与核对说明**：非零元素表示为(i,j,value)。矩阵元数据另记总行数、总列数、非零元个数；不要把元数据头行当成一个非零元素。\n\n**依据**：DS-CH05-S021—S023。\n\n## 填空题 原第8题 [DS-CH05-HW45-FI-008]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第8题。\n\n原题：\n\n求下列广义表操作的结果：\n（1） GetHead【((a,b),(c,d))】===                        ;      \n（2） GetHead【GetTail【((a,b),(c,d))】】===             ;\n（3） GetHead【GetTail【GetHead【((a,b),(c,d))】】】===         ;\n（4） GetTail【GetHead【GetTail【((a,b),(c,d))】】】===          ;\n\n**参考答案**：\n\n（1）(a,b)；（2）(c,"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "b1e1bd2b-3ee0-47ac-8995-ac6655506e56",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "3]=(5×5+2)×4=108；列优先A[7,1]=(0×9+7)×4=28，A[2,4]=(3×9+2)×4=116。虽然在单选部分，此题有A—E五个组合选填位置，仍按原顶层题号计1道主问题。\n\n**依据**：DS-CH05-S010。\n\n## 单选题 原第7题 [DS-CH05-HW45-SC-007]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第2页；原卷单选题第7题。\n\n原题：\n\n从供选择的答案中，选出应填入下面叙述   ？   内的最确切的解答，把相应编号写在答卷的对应栏内。\n有一个二维数组A，行下标的范围是1到6，列下标的范围是0到7，每个数组元素用相邻的6个字节存储，存储器按字节编址。那么，这个数组的体积是   A   个字节。假设存储数组元素A[1,0]的第一个字节的地址是0，则存储数组A的最后一个元素的第一个字节的地址是   B   。若按行存储，则A[2,4]的第一个字节的地址是  C   。若按列存储，则A[5,7]的第一个字节的地址是  D   。"
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "6aa0b1fa-4812-4615-8d53-0151c290b5f1",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "doc，原件第2—3页；原卷计算题第2题。\n\n原题：\n\n用三元组表表示下列稀疏矩阵：\n\n**原件第3页矩阵图片的人工核对转写**（每行按列展开，保留负号）：\n\n（1）8行8列：\n```text\n0 0 0 0 0 0 0 0\n0 0 0 0 0 0 0 0\n0 3 0 0 0 8 0 0\n0 0 0 0 0 0 0 0\n0 0 0 6 0 0 0 0\n0 0 0 0 0 0 0 0\n0 0 0 0 0 0 0 5\n2 0 0 0 0 0 0 0\n```\n\n（2）6行6列：\n```text\n0 0 0 0 0 -2\n0 0 0 0 9 0\n0 0 0 0 0 0\n0 0 5 0 0 0\n0 0 0 0 0 0\n0 0 0 0 3 0\n```\n\n\n**参考答案**：\n\n采用1起始行列号，首行记“行数 列数 非零元个数”，其余按行优先排列。"
+        },
+        {
+          "rank": 5,
+          "file": "00_DS_CH05_章节导航与题目统计.md",
+          "chunk_id": "3b8157c4-786b-4636-8c41-1213dd8e7631",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "这是当前已提供资料的完整统计，不代表整学期所有习题。合并原卷共20道：第四章10道、第五章10道。\n\n| 原题型 | 本章原题号 | 主问题数 |\n|---|---|---:|\n| 填空题 | 5、6、7、8 | 4 |\n| 单选题 | 4、5、6、7 | 4 |\n| 计算题 | 2、3 | 2 |\n\n## 逐题索引\n\n| 题目ID | 原题型/题号 | 原页码 |\n|---|---|---|\n| DS-CH05-HW45-FI-005 | 填空题第5题 | 1 |\n| DS-CH05-HW45-FI-006 | 填空题第6题 | 1 |\n| DS-CH05-HW45-FI-007 | 填空题第7题 | 1 |\n| DS-CH05-HW45-FI-008 | 填空题第8题 | 1 |\n| DS-CH05-HW45-SC-004 | 单选题第4题 | 1—2 |\n| DS-CH05-HW45-SC-005 | 单选题第5题 | 2 |\n| DS-CH05-HW45-SC-006 | 单选题第6题 | 2 |\n| DS-CH05-HW45-SC-007 | 单选题第7题 | 2 |\n| DS-CH05-HW45-CAL-002 | 计算题第2题 | 2—3 |\n| DS-CH05-HW45-CAL-003 | 计算题第3题 | 3 |\n\n## 资料导航\n\n- 课件正文：DS_CH05_课件正文."
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "case": "广义表嵌套",
+      "query": "DS-CH05-HW45-FI-008，Head和Tail嵌套的四个结果是什么？",
+      "index_version": "version-1",
+      "passed": true,
+      "anchor_coverage": {
+        "（3）b": true,
+        "（4）(d)": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "e538e4c3-8946-46df-a0ee-55aaccd3aa90",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "**解析与核对说明**：由“末尾A_{57}”可判断本题隐含下标从0开始：A[0..5,0..7]。总量6×8×6=288；末元素首地址1000+(48-1)×6=1282。按行A[1,4]：1000+(1×8+4)×6=1072；按列A[4,7]：1000+(7×6+4)×6=1276。末元素最后一个字节是1287，不能与首地址1282混淆。\n\n**依据**：DS-CH05-S009—S011。\n\n## 填空题 原第6题 [DS-CH05-HW45-FI-006]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第6题。\n\n原题：\n\n设数组a[1…60, 1…70]的基地址为2048，每个元素占2个存储单元，若以列序为主序顺序存储，则元素a[32,58]的存储地址为              。\n\n**参考答案**：\n\n8950。\n\n**解析与核对说明**：列优先时前面有(58-1)×60+(32-1)=3451个元素，地址2048+3451×2=8950。行下标和列下标均从1开始。\n\n**依据**：DS-CH05-S010、S011。\n\n## 填空题 原第7题 [DS-CH05-HW45-FI-007]\n\n来源：第4、5章 串、数组和广义表-作业."
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "8794d785-b482-4e75-ac3c-596cd8df907e",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "# 第5章 数组和广义表：合并作业参考答案与解析\n\n整理日期：2026-11-01；资料版本：v0.1.0。来源为同一份第4、5章合并作业，现按主题分章，保留原题号和稳定ID，不重新连续编号。答案为辅助编写并推导核对的学习参考，不是教师提供的标准答案；含题设修正和条件说明。原卷共20道主问题，两章各10道，不重复入库。\n\n## 填空题 原第5题 [DS-CH05-HW45-FI-005]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第5题。\n\n原题：\n\n假设有二维数组A_{6×8}，每个元素用相邻的6个字节存储，存储器按字节编址。已知A的起始存储位置（基地址）为1000，则数组A的体积（存储量）为            ；末尾元素A_{57}的第一个字节地址 \n为        ；若按行存储时，元素A_{14}的第一个字节地址为            ；若按列存储时，元素A_{47}的第一个字节地址为              。\n\n**参考答案**：\n\n288字节；1282；1072；1276。\n\n**解析与核对说明**：由“末尾A_{57}”可判断本题隐含下标从0开始：A[0..5,0.."
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "f061b208-83bf-4540-a54e-1903b2ff9305",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "## 填空题 原第7题 [DS-CH05-HW45-FI-007]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第7题。\n\n原题：\n\n三元素组表中的每个结点对应于稀疏矩阵的一个非零元素，它包含有三个数据项，分别表示该元素\n的         、             和            。\n\n**参考答案**：\n\n行号、列号、元素值。\n\n**解析与核对说明**：非零元素表示为(i,j,value)。矩阵元数据另记总行数、总列数、非零元个数；不要把元数据头行当成一个非零元素。\n\n**依据**：DS-CH05-S021—S023。\n\n## 填空题 原第8题 [DS-CH05-HW45-FI-008]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第8题。\n\n原题：\n\n求下列广义表操作的结果：\n（1） GetHead【((a,b),(c,d))】===                        ;      \n（2） GetHead【GetTail【((a,b),(c,d))】】===             ;\n（3） GetHead【GetTail【GetHead【((a,b),(c,d))】】】===         ;\n（4） GetTail【GetHead【GetTail【((a,b),(c,d))】】】===          ;\n\n**参考答案**：\n\n（1）(a,b)；（2）(c,"
+        },
+        {
+          "rank": 4,
+          "file": "00_DS_CH05_章节导航与题目统计.md",
+          "chunk_id": "3b8157c4-786b-4636-8c41-1213dd8e7631",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "这是当前已提供资料的完整统计，不代表整学期所有习题。合并原卷共20道：第四章10道、第五章10道。\n\n| 原题型 | 本章原题号 | 主问题数 |\n|---|---|---:|\n| 填空题 | 5、6、7、8 | 4 |\n| 单选题 | 4、5、6、7 | 4 |\n| 计算题 | 2、3 | 2 |\n\n## 逐题索引\n\n| 题目ID | 原题型/题号 | 原页码 |\n|---|---|---|\n| DS-CH05-HW45-FI-005 | 填空题第5题 | 1 |\n| DS-CH05-HW45-FI-006 | 填空题第6题 | 1 |\n| DS-CH05-HW45-FI-007 | 填空题第7题 | 1 |\n| DS-CH05-HW45-FI-008 | 填空题第8题 | 1 |\n| DS-CH05-HW45-SC-004 | 单选题第4题 | 1—2 |\n| DS-CH05-HW45-SC-005 | 单选题第5题 | 2 |\n| DS-CH05-HW45-SC-006 | 单选题第6题 | 2 |\n| DS-CH05-HW45-SC-007 | 单选题第7题 | 2 |\n| DS-CH05-HW45-CAL-002 | 计算题第2题 | 2—3 |\n| DS-CH05-HW45-CAL-003 | 计算题第3题 | 3 |\n\n## 资料导航\n\n- 课件正文：DS_CH05_课件正文."
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "ab7d7a03-052a-409b-952a-44577e0e513a",
+          "expected_file": true,
+          "anchors": [
+            "（3）b",
+            "（4）(d)"
+          ],
+          "full_chunk_text": "b),(c,d))】】】===          ;\n\n**参考答案**：\n\n（1）(a,b)；（2）(c,d)；（3）b；（4）(d)。\n\n**解析与核对说明**：令L=((a,b),(c,d))。Head(L)=(a,b)，Tail(L)=((c,d))，所以Head(Tail(L))=(c,d)。Tail(Head(L))=(b)，再取Head得到原子b；Tail(Head(Tail(L)))=Tail((c,d))=(d)。表头可以是原子或表，表尾始终是表，不能把b与(b)、(c,d)与((c,d))混淆。\n\n**依据**：DS-CH05-S038、S042—S045。\n\n## 单选题 原第4题 [DS-CH05-HW45-SC-004]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1—2页；原卷单选题第4题。\n\n原题：\n\n假设有60行70列的二维数组a[1…60, 1…70]以列序为主序顺序存储，其基地址为10000，每个元素占2个存储单元，那么第32行第58列的元素a[32,58]的存储地址为      。（无第0行第0列元素）\n  Ａ．16902    Ｂ．16904      Ｃ．14454       Ｄ．答案A, B, C均不对\n\n**参考答案**：\n\nA，16902。"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "case": "课件算术校正",
+      "query": "第11页1000+(4*8+6)*6等于10228吗？正确的A[5,6]地址是多少？",
+      "index_version": "version-1",
+      "passed": true,
+      "anchor_coverage": {
+        "1228": true,
+        "算术有误": true
+      },
+      "sources": [
+        {
+          "rank": 1,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "b5758a8b-2afc-476f-a88c-394cec4e1178",
+          "expected_file": true,
+          "anchors": [
+            "1228",
+            "算术有误"
+          ],
+          "full_chunk_text": "# 数据结构 第5章 数组和广义表 课件正文\n\n## 核对补充：公式、下标与原课件笔误\n\n本节为人工核对与推导补充，原PPTX未修改，逐页文字仍保留原文。\n\n- [DS-CH05-S010-CHECK] A[c1..d1,c2..d2]，行数R=d1-c1+1、列数C=d2-c2+1、单元长度w，基地址B=LOC(A[c1,c2])。行优先：B+((i-c1)C+(j-c2))w；列优先：B+((j-c2)R+(i-c1))w。注意基址对应首元素和实际上下界，不混用0、1起始下标。\n- [DS-CH05-S011-CHECK] 原课件写1000+(4*8+6)*6=10228，算术有误，正确为1228。该例行下标从1、列下标从0开始，A[5,6]对应4×8+6个先行元素。另例基址2048、a[32,58]的列优先地址8950是正确值。\n- [DS-CH05-S019-CHECK] 对称矩阵按行存下三角时，令r=max(i,j)、c=min(i,j)。一维下标从1开始为k=r(r-1)/2+c；从0开始再减1。合并作业单选第5题写“下三角i≤j”有矛盾，应改i≥j后选B；按原i≤j处理则公式交换i,j，原选项无一般正确项。"
+        },
+        {
+          "rank": 2,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "447b3132-84e7-48bf-ad9d-f7e073906736",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "b), (c,d) )\n5.5 广义表的存储结构\n\n## 原课件第 51 页 [DS-CH05-S051]\n\n提问：\n1.下面说法不正确的是(     )。 【南京理工大学 2001 一、3 （1.5分）】\nA. 广义表的表头总是一个广义表        B. 广义表的表尾总是一个广义表\nC. 广义表难以用顺序存储结构          D. 广义表可以是一个多层次的结构\n5.5 广义表的存储结构\n\n## 原课件第 52 页 [DS-CH05-S052]\n\n另外一种存储方法：\n1.原子结点：                                    2.表结点\ntp\natom\ntag=0\n标志域  　　值域　表尾指针\n指向下一结点\ntp\natom\ntag=1\n标志域  　　值域　表尾指针\n指向下一结点\n5.5 广义表的存储结构\n\n## 原课件第 53 页 [DS-CH05-S053]"
+        },
+        {
+          "rank": 3,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "2855197a-b237-403b-9ff1-e39d4c08eb3b",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "按列存储的公式是？\nLoc(a_{ij})=Loc(a_{11})+[(j-1)*m+(i-1)]*K  （尽管是方阵，但公式仍不同）\n例1〖软考题〗：一个二维数组A，行下标的范围是1到6，列下标的范围是0到7，每个数组元素用相邻的6个字节存储，存储器按字节编址。那么，这个数组的体积是         个字节。\n288\n例3：〖00年计算机系考研题〗设数组a[1…60, 1…70]的基地址为2048，每个元素占2个存储单元，若以列序为主序顺序存储，则元素a[32,58]的存储地址为            。\n8950\nLOC(a_{ij})=LOC(a_{c}_{1}_{，}_{c}_{2})+[(j-c2)*(d1-c1+1)+i-c_{1})]*L\n得：LOC(a_{32,58})=2048+[(58-1)*(60-1+1)+32-1)]*2＝8950\n数组中第一个元素的地址是1000，若以行序为主序顺序存储元素A[5,6]的地址是多少？\n1000+(4*8+6)*6= 10228\n5.2 数组的顺序存储表示和实现\n\n## 原课件第 12 页 [DS-CH05-S012]\n\n提问：\n1."
+        },
+        {
+          "rank": 4,
+          "file": "DS_CH05_课件正文.md",
+          "chunk_id": "47929a47-7917-4c6f-af51-50be9c7ef078",
+          "expected_file": true,
+          "anchors": [],
+          "full_chunk_text": "表结点——存储广义表；原子结点——存储单元素\n5.5 广义表的存储结构\n\n## 原课件第 48 页 [DS-CH05-S048]\n\ntag=1      hp        tp\ntag=0            data\n表结点                               原子结点\ntag：区分表结点和元素结点的标志；\nhp：指向表头结点的指针；\ntp：指向表尾结点的指针；\ndata：数据域，存放单元素。\n广义表的存储结构——头尾表示法\n结点结构\n5.5 广义表的存储结构\n\n## 原课件第 49 页 [DS-CH05-S049]\n\n① A =( )\n^\n1\n0 | e\n③ C =( a ,( b , c , d ) )\n1\n^\n1\n1\n0 | a\n0 | b\n0 | d\n0 | c\n1\n^\n1\n例：\n② B=( e )\nA=NULL\n^\n^\n1\n5.5 广义表的存储结构\n\n## 原课件第 50 页 [DS-CH05-S050]\n\n⑤  E=(a, E)\n④  D=( A , B ,C )＝(( ),(e),(a,(b,c,d)))\n0 | a\n^\n1\n1\n^\n1\n0 | e\n1\n^\n1\n1\n^\n1\n1\n0 | a\n0 | b\n0 | d\n0 | c\n1\n^\n1\n^\n1\n（参见教材P109图）\n提问：F=( (a,b), (c,d) )\n5."
+        },
+        {
+          "rank": 5,
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "chunk_id": "8794d785-b482-4e75-ac3c-596cd8df907e",
+          "expected_file": false,
+          "anchors": [],
+          "full_chunk_text": "# 第5章 数组和广义表：合并作业参考答案与解析\n\n整理日期：2026-11-01；资料版本：v0.1.0。来源为同一份第4、5章合并作业，现按主题分章，保留原题号和稳定ID，不重新连续编号。答案为辅助编写并推导核对的学习参考，不是教师提供的标准答案；含题设修正和条件说明。原卷共20道主问题，两章各10道，不重复入库。\n\n## 填空题 原第5题 [DS-CH05-HW45-FI-005]\n\n来源：第4、5章 串、数组和广义表-作业.doc，原件第1页；原卷填空题第5题。\n\n原题：\n\n假设有二维数组A_{6×8}，每个元素用相邻的6个字节存储，存储器按字节编址。已知A的起始存储位置（基地址）为1000，则数组A的体积（存储量）为            ；末尾元素A_{57}的第一个字节地址 \n为        ；若按行存储时，元素A_{14}的第一个字节地址为            ；若按列存储时，元素A_{47}的第一个字节地址为              。\n\n**参考答案**：\n\n288字节；1282；1072；1276。\n\n**解析与核对说明**：由“末尾A_{57}”可判断本题隐含下标从0开始：A[0..5,0.."
+        }
+      ]
+    }
+  ]
+}
