@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-01",
+  "chapters": [
+    {
+      "chapter": 4,
+      "knowledge_base": "数据结构_第4章_串",
+      "status": "ready",
+      "documents": 3,
+      "chunks": 56,
+      "index_version": "version-3",
+      "readiness_verified": true,
+      "files": [
+        {
+          "file": "00_DS_CH04_章节导航与题目统计.md",
+          "sha256": "3b95b74c29d2085a70b84823d1dbbb39ab577af56a33c1ef4095f2e1ac40ca1e",
+          "stored_copy_matches": true
+        },
+        {
+          "file": "DS_CH04_HW45_题目与校正答案.md",
+          "sha256": "8f47c549a5e0932dfc1805fb6c391fb8147c86b4e957239908ef539799f04623",
+          "stored_copy_matches": true
+        },
+        {
+          "file": "DS_CH04_课件正文.md",
+          "sha256": "36dbefe8e95ddcd44a12d6419d26e4c0ea6f3f919b388746e9e6aca3462765d9",
+          "stored_copy_matches": true
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "knowledge_base": "数据结构_第5章_数组和广义表",
+      "status": "ready",
+      "documents": 3,
+      "chunks": 51,
+      "index_version": "version-1",
+      "readiness_verified": true,
+      "files": [
+        {
+          "file": "00_DS_CH05_章节导航与题目统计.md",
+          "sha256": "c59afd5cf891352d5a68f8377231672f342f45b948f0aaae6e358529fa1c21db",
+          "stored_copy_matches": true
+        },
+        {
+          "file": "DS_CH05_HW45_题目与校正答案.md",
+          "sha256": "4ffbcaa91a484de5b8a2d6572161e0ee705d492ab3cfea1f8f7fa4db39697593",
+          "stored_copy_matches": true
+        },
+        {
+          "file": "DS_CH05_课件正文.md",
+          "sha256": "c5570cab2b3f4a693d79bd8c7bd386f686b440ed2ac14cf26659a424565990da",
+          "stored_copy_matches": true
+        }
+      ]
+    }
+  ],
+  "originals_unchanged": true,
+  "arithmetic_checks": 28,
+  "code_test": "PASS: 5000 randomized replacement/reversal cases and boundary/alias cases",
+  "retrieval_checks": {
+    "passed": 12,
+    "cases": 12
+  },
+  "web_checked": true,
+  "hash_scope": "files中的哈希记录原本机实际入库字节；Git包文本统一LF后的哈希以各章导入清单及provenance/第四五章交付文件清单.json为准。"
+}

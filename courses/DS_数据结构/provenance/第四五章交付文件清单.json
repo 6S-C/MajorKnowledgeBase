@@ -1,0 +1,185 @@
+{
+  "date": "2026-11-01",
+  "text_line_endings": "LF",
+  "main_questions": {
+    "CH04": 10,
+    "CH05": 10
+  },
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "78618735f668d00d906f571fe44c342d4321a853a255ded52f32056d8c9d664d",
+      "bytes": 831
+    },
+    {
+      "path": "chapters/第4章_串/01_课件/DS_CH04_课件正文.md",
+      "sha256": "b98011bd422ef4bb83811dec2c3b247662889dc3ab60a0713b7599da2083cf3b",
+      "bytes": 35996
+    },
+    {
+      "path": "chapters/第4章_串/02_题目/DS_CH04_HW45_作业题目.md",
+      "sha256": "77ed2f41bc2edc8b316d514363065666502e56482930a9e0de18a9170b279c66",
+      "bytes": 3473
+    },
+    {
+      "path": "chapters/第4章_串/03_答案与解析/DS_CH04_HW45_作业答案与解析.md",
+      "sha256": "f23753fda658c789d1ce64e434a779d5a463e910efe102f09bfe88a473d9a8e0",
+      "bytes": 9622
+    },
+    {
+      "path": "chapters/第4章_串/04_入库资料/00_DS_CH04_章节导航与题目统计.md",
+      "sha256": "6ef893d1179bc1041d91fd97cbd02eb5daa2aedc4f66a19df32551e6cbe26f91",
+      "bytes": 1560
+    },
+    {
+      "path": "chapters/第4章_串/04_入库资料/DS_CH04_HW45_题目与校正答案.md",
+      "sha256": "f23753fda658c789d1ce64e434a779d5a463e910efe102f09bfe88a473d9a8e0",
+      "bytes": 9622
+    },
+    {
+      "path": "chapters/第4章_串/04_入库资料/DS_CH04_课件正文.md",
+      "sha256": "f0b79376f5b66a4d18a58a915f182bfd58b50b6227e4ed7833bca9fc232b6a12",
+      "bytes": 37377
+    },
+    {
+      "path": "chapters/第4章_串/05_提取与核对/代码验证/chapter4_reference.hpp",
+      "sha256": "2f3937417c1990a148c117caef1c699d40e7dabe6d93abfc3bb59c896374e458",
+      "bytes": 1150
+    },
+    {
+      "path": "chapters/第4章_串/05_提取与核对/代码验证/test_chapter4.cpp",
+      "sha256": "cce08de40143e96b47645fabbb488df64147488698a12557f2703d78aae84a7e",
+      "bytes": 2031
+    },
+    {
+      "path": "chapters/第4章_串/05_提取与核对/课件校正说明.md",
+      "sha256": "c5ffc37747fdfc655def8404254af4ca346889dd2e0c8efe8035f068d9d4b621",
+      "bytes": 1408
+    },
+    {
+      "path": "chapters/第4章_串/README.md",
+      "sha256": "e404dd2d635bca68fdddeb7dee747c90620382e647b7a2a6239d6a49f452af61",
+      "bytes": 1131
+    },
+    {
+      "path": "chapters/第4章_串/导入清单.csv",
+      "sha256": "8b6fa8f2f4a1208e3612b59f73dfeaf6dcc9574fc2bfac9bc94c2dae40f7d977",
+      "bytes": 507
+    },
+    {
+      "path": "chapters/第4章_串/题目索引.csv",
+      "sha256": "6de720d654216bd66bffaa020f74732417fabc702f07fe9cda626fb3628cce73",
+      "bytes": 843
+    },
+    {
+      "path": "chapters/第4章_串/题目统计与目录.md",
+      "sha256": "6ef893d1179bc1041d91fd97cbd02eb5daa2aedc4f66a19df32551e6cbe26f91",
+      "bytes": 1560
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/01_课件/DS_CH05_课件正文.md",
+      "sha256": "3349ddea49674b8ca89e030f38c639144d8fc524702e53f0ea99f1a25de88121",
+      "bytes": 27991
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/02_题目/DS_CH05_HW45_作业题目.md",
+      "sha256": "2caa25c4e1210efba83d66c4d710ac1fb5bf5657974dcb9aeb87d0f323b75616",
+      "bytes": 6273
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/03_答案与解析/DS_CH05_HW45_作业答案与解析.md",
+      "sha256": "9319370888417fec0373527357507e2a330ceb8d946c17943d67962e9735f1ee",
+      "bytes": 10467
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/04_入库资料/00_DS_CH05_章节导航与题目统计.md",
+      "sha256": "df4792516793a32a190878d68b725bbf85bee01e077e40054ca9d52bf49a5aba",
+      "bytes": 1561
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/04_入库资料/DS_CH05_HW45_题目与校正答案.md",
+      "sha256": "9319370888417fec0373527357507e2a330ceb8d946c17943d67962e9735f1ee",
+      "bytes": 10467
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/04_入库资料/DS_CH05_课件正文.md",
+      "sha256": "6bfdcc0f9b8b366fc18e14b0b238c8533f1dc632c7ba75499deb5eae5e852777",
+      "bytes": 29404
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/05_提取与核对/课件校正说明.md",
+      "sha256": "ea5791bc851079149d12c5d827f1efc8fb7c7717635c8c50478e7055c35ad385",
+      "bytes": 1440
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/README.md",
+      "sha256": "c0103491cdc42868c6a54f826d6c2278bc01cde5a522bd620884dabe5e560f04",
+      "bytes": 1161
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/导入清单.csv",
+      "sha256": "8740a3d76f9c49740bdd5a6cadb4a9d76dcb31344329f7ec7c99cf6894feb0f8",
+      "bytes": 552
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/题目索引.csv",
+      "sha256": "ae67a77723daf0f55b8e24d9d28469df6dbe948bd1b145e4d5f49e25c3d3a35a",
+      "bytes": 861
+    },
+    {
+      "path": "chapters/第5章_数组和广义表/题目统计与目录.md",
+      "sha256": "df4792516793a32a190878d68b725bbf85bee01e077e40054ca9d52bf49a5aba",
+      "bytes": 1561
+    },
+    {
+      "path": "evaluation/第四五章内容核对.json",
+      "sha256": "e8630a5bb26eac132968587751621bfb9b95cf778f9e27f30799932808912661",
+      "bytes": 6439
+    },
+    {
+      "path": "evaluation/第四五章整理与验收报告.md",
+      "sha256": "89602a32109207a4aff36f8ccde1f9281482dbb6f11caccb6178fea82108b423",
+      "bytes": 4947
+    },
+    {
+      "path": "evaluation/第四五章最终验收.json",
+      "sha256": "f761598d870d85da052bca7af839bc960f59fa0116acb2592e01798dcd54fb36",
+      "bytes": 2190
+    },
+    {
+      "path": "evaluation/第四五章检索验收.json",
+      "sha256": "d972e5cd737d6ddb6df4296d86f378e272aea99939053a8f959c89e76e4ef60f",
+      "bytes": 81375
+    },
+    {
+      "path": "evaluation/第四五章网页检查.json",
+      "sha256": "b4456a9bcaa909cc14f78bf336954079af641c4db280bc01412a452ca7ca2b38",
+      "bytes": 254
+    },
+    {
+      "path": "provenance/第四五章来源核对.json",
+      "sha256": "1537fd53c13290392c125fe03459f86d7d0a55aef63a9b027fa44340446eee6f",
+      "bytes": 1580
+    },
+    {
+      "path": "provenance/答案与入库对应表.json",
+      "sha256": "3c3b6634f0879883a21eef3c2d6e083ac2ce389d2a4fc473fd35d7589c516b0e",
+      "bytes": 3571
+    },
+    {
+      "path": "README.md",
+      "sha256": "96199397b602498ca9b3c9826f4b29ff55527f96cd5ee0acd6c7d3fe3d5bfc41",
+      "bytes": 4926
+    },
+    {
+      "path": "第4、5章_合并作业_答案与解析.md",
+      "sha256": "6507d8dbbc624d37afd462fef8f27618019e9860cf7d5bf9abe02d883b5be0e0",
+      "bytes": 19671
+    },
+    {
+      "path": "答案导航.md",
+      "sha256": "fff0b74e239ef4da2160517f1fa24be0b877fe10d114ce0848e8014a5b6acdb4",
+      "bytes": 1768
+    }
+  ]
+}

@@ -52,5 +52,19 @@
     "source_stem": "第3章实验课补充练习题",
     "answer": "chapters/第3章_栈和队列/03_答案与解析/第3章实验课补充练习题__答案与解析.md",
     "ingestion_file": "chapters/第3章_栈和队列/04_入库资料/DS_CH03_第3章实验课补充练习题__题目与校正答案.md"
+  },
+  {
+    "chapter": 4,
+    "source_stem": "第4、5章 串、数组和广义表-作业（第4章部分）",
+    "answer": "chapters/第4章_串/03_答案与解析/DS_CH04_HW45_作业答案与解析.md",
+    "ingestion_file": "chapters/第4章_串/04_入库资料/DS_CH04_HW45_题目与校正答案.md",
+    "main_questions": 10
+  },
+  {
+    "chapter": 5,
+    "source_stem": "第4、5章 串、数组和广义表-作业（第5章部分）",
+    "answer": "chapters/第5章_数组和广义表/03_答案与解析/DS_CH05_HW45_作业答案与解析.md",
+    "ingestion_file": "chapters/第5章_数组和广义表/04_入库资料/DS_CH05_HW45_题目与校正答案.md",
+    "main_questions": 10
   }
 ]

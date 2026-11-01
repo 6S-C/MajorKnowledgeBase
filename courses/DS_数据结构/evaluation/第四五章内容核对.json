@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-01",
+  "originals_unchanged": true,
+  "unique_original_files": 3,
+  "checked_original_copies": 4,
+  "checks": [
+    {
+      "check": "FI2: length and slash positions",
+      "result": [
+        20,
+        [
+          3,
+          12
+        ]
+      ]
+    },
+    {
+      "check": "SC3: substring concatenation",
+      "result": "BCDEFEF"
+    },
+    {
+      "check": "CAL1: independent replace expression",
+      "result": "I AM A WORKER"
+    },
+    {
+      "check": "CAL1: independent concat expression",
+      "result": "A GOOD STUDENT"
+    },
+    {
+      "check": "CAL1: sequential evaluation length",
+      "result": 13
+    },
+    {
+      "check": "FI5: volume",
+      "result": 288
+    },
+    {
+      "check": "FI5: last first byte",
+      "result": 1282
+    },
+    {
+      "check": "FI5: row major",
+      "result": 1072
+    },
+    {
+      "check": "FI5: column major",
+      "result": 1276
+    },
+    {
+      "check": "FI6: column major",
+      "result": 8950
+    },
+    {
+      "check": "SC4: different base",
+      "result": 16902
+    },
+    {
+      "check": "SC6: five values",
+      "result": [
+        176,
+        76,
+        108,
+        28,
+        116
+      ]
+    },
+    {
+      "check": "SC7: four values",
+      "result": [
+        288,
+        282,
+        72,
+        276
+      ]
+    },
+    {
+      "check": "slide11 corrected address",
+      "result": 1228
+    },
+    {
+      "check": "SC5: lower triangular mapping, n=1..30",
+      "result": "passed"
+    },
+    {
+      "check": "FI8: generalized lists",
+      "result": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "c",
+          "d"
+        ],
+        "b",
+        [
+          "d"
+        ]
+      ]
+    },
+    {
+      "check": "CAL2(1): matrix to triplets",
+      "result": [
+        [
+          3,
+          2,
+          3
+        ],
+        [
+          3,
+          6,
+          8
+        ],
+        [
+          5,
+          4,
+          6
+        ],
+        [
+          7,
+          8,
+          5
+        ],
+        [
+          8,
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "check": "CAL2(1): triplets roundtrip",
+      "result": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          0,
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "check": "CAL2(2): matrix to triplets",
+      "result": [
+        [
+          1,
+          6,
+          -2
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          4,
+          3,
+          5
+        ],
+        [
+          6,
+          5,
+          3
+        ]
+      ]
+    },
+    {
+      "check": "CAL2(2): triplets roundtrip",
+      "result": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          -2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          5,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "check": "CAL3(1)",
+      "result": [
+        [
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          12,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          16,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "check": "CAL3(1) triplets roundtrip",
+      "result": [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          1,
+          12
+        ],
+        [
+          3,
+          1,
+          3
+        ],
+        [
+          4,
+          4,
+          4
+        ],
+        [
+          5,
+          3,
+          6
+        ],
+        [
+          6,
+          1,
+          16
+        ]
+      ]
+    },
+    {
+      "check": "CAL3(2)",
+      "result": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          0,
+          6
+        ],
+        [
+          0,
+          0,
+          7,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "check": "CAL3(2) triplets roundtrip",
+      "result": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          4,
+          9
+        ],
+        [
+          3,
+          2,
+          8
+        ],
+        [
+          3,
+          5,
+          6
+        ],
+        [
+          4,
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "check": "BF failed search counterexample",
+      "result": 11
+    },
+    {
+      "check": "main question totals",
+      "result": [
+        10,
+        10
+      ]
+    },
+    {
+      "check": "unique source questions",
+      "result": 20
+    },
+    {
+      "check": "unique chapter question IDs",
+      "result": 20
+    }
+  ],
+  "cpp_test": "PASS: 5000 randomized replacement/reversal cases and boundary/alias cases",
+  "visual_review": "合并原卷三页及矩阵局部图已实际查看；关键课件页保留PNG以供对照"
+}

@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-01",
+  "originals_in_git": false,
+  "note": "source是整理者的原始投放目录内相对路径，local_archive_copy是本地归档关系，不是本Git包中的文件。原件未修改，源哈希不做LF转换。",
+  "sources": [
+    {
+      "chapter": 4,
+      "source": "第4章/第4章 串（共4学时）.pptx",
+      "shared_homework": false,
+      "sha256": "63dc7a64e5bba34ad159dca993d3d45bad08c98dc8d49b43a26e9f52abbf53da",
+      "local_archive_copy": "第4章_串/00_原始资料/第4章 串（共4学时）.pptx"
+    },
+    {
+      "chapter": 4,
+      "source": "第4章/第4、5章 串、数组和广义表-作业.doc",
+      "shared_homework": true,
+      "sha256": "c4cfa5d5da0841acd22e028f32370f24522699b53824c1bac259ca33934bbcb8",
+      "local_archive_copy": "第4章_串/00_原始资料/第4、5章 串、数组和广义表-作业.doc"
+    },
+    {
+      "chapter": 5,
+      "source": "第5章/第5章 数组和广义表（共4学时）.pptx",
+      "shared_homework": false,
+      "sha256": "df3b9029db424ff4bd62d7c94dcee1eeb81ccb24f53e78bb5d634da31f260694",
+      "local_archive_copy": "第5章_数组和广义表/00_原始资料/第5章 数组和广义表（共4学时）.pptx"
+    },
+    {
+      "chapter": 5,
+      "source": "第4章/第4、5章 串、数组和广义表-作业.doc",
+      "shared_homework": true,
+      "sha256": "c4cfa5d5da0841acd22e028f32370f24522699b53824c1bac259ca33934bbcb8",
+      "local_archive_copy": "第5章_数组和广义表/00_原始资料/第4、5章 串、数组和广义表-作业.doc"
+    }
+  ]
+}
