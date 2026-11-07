@@ -1,0 +1,2569 @@
+{
+  "created_at": "2026-10-30T23:39:27.474115+08:00",
+  "source": "教材书页42—43/PDF53—54，逐项看图核对",
+  "scope": "1.13(6—12) and 1.14(3—6); not all remaining 47 subparts",
+  "sympy_version": "1.14.0",
+  "results": [
+    {
+      "exercise": "1.13(6)",
+      "variables": "ABC",
+      "ones": [
+        0,
+        2,
+        4,
+        6,
+        7
+      ],
+      "dont_cares": [],
+      "expression": "(!C | (A & B))",
+      "groups": [
+        {
+          "term": "!C",
+          "literals": 1,
+          "covered": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "covered_required": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(A & B)",
+          "literals": 2,
+          "covered": [
+            6,
+            7
+          ],
+          "covered_required": [
+            6,
+            7
+          ],
+          "used_dont_cares": []
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1
+          },
+          "expected": 1,
+          "got": 1
+        }
+      ],
+      "care_rows": 8,
+      "cost": {
+        "terms": 2,
+        "literals": 3
+      },
+      "optimal_cost": [
+        2,
+        3
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.13(7)",
+      "variables": "ABC",
+      "ones": [
+        0,
+        1,
+        5,
+        6,
+        7
+      ],
+      "dont_cares": [],
+      "expression": "((A & B) | (C & !B) | (!A & !B))",
+      "groups": [
+        {
+          "term": "(A & B)",
+          "literals": 2,
+          "covered": [
+            6,
+            7
+          ],
+          "covered_required": [
+            6,
+            7
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(C & !B)",
+          "literals": 2,
+          "covered": [
+            1,
+            5
+          ],
+          "covered_required": [
+            1,
+            5
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!A & !B)",
+          "literals": 2,
+          "covered": [
+            0,
+            1
+          ],
+          "covered_required": [
+            0,
+            1
+          ],
+          "used_dont_cares": []
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1
+          },
+          "expected": 1,
+          "got": 1
+        }
+      ],
+      "care_rows": 8,
+      "cost": {
+        "terms": 3,
+        "literals": 6
+      },
+      "optimal_cost": [
+        3,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.13(8)",
+      "variables": "ABCD",
+      "ones": [
+        3,
+        4,
+        5,
+        7,
+        9,
+        13,
+        14,
+        15
+      ],
+      "dont_cares": [],
+      "expression": "((A & B & C) | (A & D & !C) | (C & D & !A) | (B & !A & !C))",
+      "groups": [
+        {
+          "term": "(A & B & C)",
+          "literals": 3,
+          "covered": [
+            14,
+            15
+          ],
+          "covered_required": [
+            14,
+            15
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(A & D & !C)",
+          "literals": 3,
+          "covered": [
+            9,
+            13
+          ],
+          "covered_required": [
+            9,
+            13
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(C & D & !A)",
+          "literals": 3,
+          "covered": [
+            3,
+            7
+          ],
+          "covered_required": [
+            3,
+            7
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(B & !A & !C)",
+          "literals": 3,
+          "covered": [
+            4,
+            5
+          ],
+          "covered_required": [
+            4,
+            5
+          ],
+          "used_dont_cares": []
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        }
+      ],
+      "care_rows": 16,
+      "cost": {
+        "terms": 4,
+        "literals": 12
+      },
+      "optimal_cost": [
+        4,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.13(9)",
+      "variables": "ABCD",
+      "ones": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        11,
+        13
+      ],
+      "dont_cares": [],
+      "expression": "((B & C & !A) | (B & D & !C) | (C & D & !B) | (!A & !B & !C))",
+      "groups": [
+        {
+          "term": "(B & C & !A)",
+          "literals": 3,
+          "covered": [
+            6,
+            7
+          ],
+          "covered_required": [
+            6,
+            7
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(B & D & !C)",
+          "literals": 3,
+          "covered": [
+            5,
+            13
+          ],
+          "covered_required": [
+            5,
+            13
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(C & D & !B)",
+          "literals": 3,
+          "covered": [
+            3,
+            11
+          ],
+          "covered_required": [
+            3,
+            11
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!A & !B & !C)",
+          "literals": 3,
+          "covered": [
+            0,
+            1
+          ],
+          "covered_required": [
+            0,
+            1
+          ],
+          "used_dont_cares": []
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        }
+      ],
+      "care_rows": 16,
+      "cost": {
+        "terms": 4,
+        "literals": 12
+      },
+      "optimal_cost": [
+        4,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.13(10)",
+      "variables": "ABCD",
+      "ones": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12
+      ],
+      "dont_cares": [],
+      "expression": "(!A | (!B & !C) | (!B & !D) | (!C & !D))",
+      "groups": [
+        {
+          "term": "!A",
+          "literals": 1,
+          "covered": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "covered_required": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!B & !C)",
+          "literals": 2,
+          "covered": [
+            0,
+            1,
+            8,
+            9
+          ],
+          "covered_required": [
+            0,
+            1,
+            8,
+            9
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!B & !D)",
+          "literals": 2,
+          "covered": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "covered_required": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!C & !D)",
+          "literals": 2,
+          "covered": [
+            0,
+            4,
+            8,
+            12
+          ],
+          "covered_required": [
+            0,
+            4,
+            8,
+            12
+          ],
+          "used_dont_cares": []
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        }
+      ],
+      "care_rows": 16,
+      "cost": {
+        "terms": 4,
+        "literals": 7
+      },
+      "optimal_cost": [
+        4,
+        7
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.13(11)",
+      "variables": "ABCD",
+      "ones": [
+        0,
+        1,
+        2,
+        5,
+        8,
+        9,
+        10,
+        12,
+        14
+      ],
+      "dont_cares": [],
+      "expression": "((A & !D) | (!B & !C) | (!B & !D) | (D & !A & !C))",
+      "groups": [
+        {
+          "term": "(A & !D)",
+          "literals": 2,
+          "covered": [
+            8,
+            10,
+            12,
+            14
+          ],
+          "covered_required": [
+            8,
+            10,
+            12,
+            14
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!B & !C)",
+          "literals": 2,
+          "covered": [
+            0,
+            1,
+            8,
+            9
+          ],
+          "covered_required": [
+            0,
+            1,
+            8,
+            9
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!B & !D)",
+          "literals": 2,
+          "covered": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "covered_required": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(D & !A & !C)",
+          "literals": 3,
+          "covered": [
+            1,
+            5
+          ],
+          "covered_required": [
+            1,
+            5
+          ],
+          "used_dont_cares": []
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        }
+      ],
+      "care_rows": 16,
+      "cost": {
+        "terms": 4,
+        "literals": 9
+      },
+      "optimal_cost": [
+        4,
+        9
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.13(12)",
+      "variables": "ABCD",
+      "ones": [
+        0,
+        4,
+        5,
+        7,
+        8,
+        10,
+        14,
+        15
+      ],
+      "dont_cares": [],
+      "expression": "((A & B & C) | (B & D & !A) | (A & !B & !D) | (!A & !C & !D))",
+      "groups": [
+        {
+          "term": "(A & B & C)",
+          "literals": 3,
+          "covered": [
+            14,
+            15
+          ],
+          "covered_required": [
+            14,
+            15
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(B & D & !A)",
+          "literals": 3,
+          "covered": [
+            5,
+            7
+          ],
+          "covered_required": [
+            5,
+            7
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(A & !B & !D)",
+          "literals": 3,
+          "covered": [
+            8,
+            10
+          ],
+          "covered_required": [
+            8,
+            10
+          ],
+          "used_dont_cares": []
+        },
+        {
+          "term": "(!A & !C & !D)",
+          "literals": 3,
+          "covered": [
+            0,
+            4
+          ],
+          "covered_required": [
+            0,
+            4
+          ],
+          "used_dont_cares": []
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        }
+      ],
+      "care_rows": 16,
+      "cost": {
+        "terms": 4,
+        "literals": 12
+      },
+      "optimal_cost": [
+        4,
+        12
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.14(3)",
+      "variables": "ABC",
+      "ones": [
+        3,
+        5,
+        6,
+        7
+      ],
+      "dont_cares": [
+        2,
+        4
+      ],
+      "expression": "(A | B)",
+      "groups": [
+        {
+          "term": "A",
+          "literals": 1,
+          "covered": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "covered_required": [
+            5,
+            6,
+            7
+          ],
+          "used_dont_cares": [
+            4
+          ]
+        },
+        {
+          "term": "B",
+          "literals": 1,
+          "covered": [
+            2,
+            3,
+            6,
+            7
+          ],
+          "covered_required": [
+            3,
+            6,
+            7
+          ],
+          "used_dont_cares": [
+            2
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1
+          },
+          "expected": 1,
+          "got": 1
+        }
+      ],
+      "care_rows": 6,
+      "cost": {
+        "terms": 2,
+        "literals": 2
+      },
+      "optimal_cost": [
+        2,
+        2
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.14(4)",
+      "variables": "ABCD",
+      "ones": [
+        0,
+        4,
+        6,
+        8,
+        13
+      ],
+      "dont_cares": [
+        1,
+        2,
+        3,
+        9,
+        10,
+        11
+      ],
+      "expression": "(!B | (!A & !D) | (A & D & !C))",
+      "groups": [
+        {
+          "term": "!B",
+          "literals": 1,
+          "covered": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11
+          ],
+          "covered_required": [
+            0,
+            8
+          ],
+          "used_dont_cares": [
+            1,
+            2,
+            3,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "term": "(!A & !D)",
+          "literals": 2,
+          "covered": [
+            0,
+            2,
+            4,
+            6
+          ],
+          "covered_required": [
+            0,
+            4,
+            6
+          ],
+          "used_dont_cares": [
+            2
+          ]
+        },
+        {
+          "term": "(A & D & !C)",
+          "literals": 3,
+          "covered": [
+            9,
+            13
+          ],
+          "covered_required": [
+            13
+          ],
+          "used_dont_cares": [
+            9
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        }
+      ],
+      "care_rows": 10,
+      "cost": {
+        "terms": 3,
+        "literals": 6
+      },
+      "optimal_cost": [
+        3,
+        6
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.14(5)",
+      "variables": "ABCD",
+      "ones": [
+        0,
+        1,
+        8,
+        10
+      ],
+      "dont_cares": [
+        2,
+        3,
+        4,
+        5,
+        11
+      ],
+      "expression": "((!A & !B) | (!B & !D))",
+      "groups": [
+        {
+          "term": "(!A & !B)",
+          "literals": 2,
+          "covered": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "covered_required": [
+            0,
+            1
+          ],
+          "used_dont_cares": [
+            2,
+            3
+          ]
+        },
+        {
+          "term": "(!B & !D)",
+          "literals": 2,
+          "covered": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "covered_required": [
+            0,
+            8,
+            10
+          ],
+          "used_dont_cares": [
+            2
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": null,
+          "got": 0
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": null,
+          "got": 0
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": null,
+          "got": 0
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        }
+      ],
+      "care_rows": 11,
+      "cost": {
+        "terms": 2,
+        "literals": 4
+      },
+      "optimal_cost": [
+        2,
+        4
+      ],
+      "passed": true
+    },
+    {
+      "exercise": "1.14(6)",
+      "variables": "ABCD",
+      "ones": [
+        3,
+        5,
+        8,
+        9,
+        10,
+        12
+      ],
+      "dont_cares": [
+        0,
+        1,
+        2,
+        13
+      ],
+      "expression": "((A & !C) | (D & !C) | (!A & !B) | (!B & !D))",
+      "groups": [
+        {
+          "term": "(A & !C)",
+          "literals": 2,
+          "covered": [
+            8,
+            9,
+            12,
+            13
+          ],
+          "covered_required": [
+            8,
+            9,
+            12
+          ],
+          "used_dont_cares": [
+            13
+          ]
+        },
+        {
+          "term": "(D & !C)",
+          "literals": 2,
+          "covered": [
+            1,
+            5,
+            9,
+            13
+          ],
+          "covered_required": [
+            5,
+            9
+          ],
+          "used_dont_cares": [
+            1,
+            13
+          ]
+        },
+        {
+          "term": "(!A & !B)",
+          "literals": 2,
+          "covered": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "covered_required": [
+            3
+          ],
+          "used_dont_cares": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "term": "(!B & !D)",
+          "literals": 2,
+          "covered": [
+            0,
+            2,
+            8,
+            10
+          ],
+          "covered_required": [
+            8,
+            10
+          ],
+          "used_dont_cares": [
+            0,
+            2
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "index": 0,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 1,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 2,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 3,
+          "inputs": {
+            "A": 0,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 4,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 5,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 6,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 7,
+          "inputs": {
+            "A": 0,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 8,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 9,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 0,
+            "D": 1
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 10,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 11,
+          "inputs": {
+            "A": 1,
+            "B": 0,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 12,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 0
+          },
+          "expected": 1,
+          "got": 1
+        },
+        {
+          "index": 13,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 0,
+            "D": 1
+          },
+          "expected": null,
+          "got": 1
+        },
+        {
+          "index": 14,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 0
+          },
+          "expected": 0,
+          "got": 0
+        },
+        {
+          "index": 15,
+          "inputs": {
+            "A": 1,
+            "B": 1,
+            "C": 1,
+            "D": 1
+          },
+          "expected": 0,
+          "got": 0
+        }
+      ],
+      "care_rows": 12,
+      "cost": {
+        "terms": 4,
+        "literals": 8
+      },
+      "optimal_cost": [
+        4,
+        8
+      ],
+      "passed": true
+    }
+  ],
+  "checks": {
+    "cases": 11,
+    "care_rows": 135,
+    "all_passed": true
+  },
+  "source_image_hashes": {
+    "textbook-exercises-42.png": "1c39c569bf2a7bde30aa757a84bd632ac4c84e92bf32aaf83e2f5c35f985fb8c",
+    "textbook-exercises-43.png": "e6d31698a881e8f1a089ff09b2a9f69925bd1ac2dd5fde7aa068f216d86921eb"
+  }
+}
