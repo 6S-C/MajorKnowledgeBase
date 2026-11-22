@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-22",
+  "originals_in_git": false,
+  "note": "原件只读提取；source为原始投放目录内的相对路径，不是Git包中的文件。",
+  "sources": [
+    {
+      "source": "第6章/第6章 树和二叉树 作业.doc",
+      "bytes": 100352,
+      "sha256": "0caea5469c9ebcf409e431262210ab24c236e3b535ec219a832c7c2c7647ae88"
+    },
+    {
+      "source": "第6章/第6章 树和二叉树（共10学时）.pptx",
+      "bytes": 2108908,
+      "sha256": "96c0947ff9ae852db91f87fc52878acfc3025cda4856d4d44f89bc82e12142d6"
+    }
+  ]
+}

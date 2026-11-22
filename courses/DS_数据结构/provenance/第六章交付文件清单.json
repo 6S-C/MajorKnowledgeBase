@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-22",
+  "version": "v0.1.0",
+  "text_line_endings": "LF",
+  "scope": "仅列第六章章节目录内交付文件；目录外导航可独立更新。",
+  "files": [
+    {
+      "path": "chapters/第6章_树和二叉树/01_课件/DS_CH06_课件正文.md",
+      "sha256": "f179fbcb042c6f1cfd65b6c14ecee97500a71576c4234a3ca8cdb498ac17d3d5",
+      "bytes": 62621
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/02_题目/DS_CH06_HW_作业题目.md",
+      "sha256": "3d104b2d52368f60cfc7b5dde94186c5dfee2bf287fd0482e32490e1c08b70e2",
+      "bytes": 10120
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/03_答案与解析/README.md",
+      "sha256": "d1fe95b9c89ea56b5ebe04e90a73e2964faf18d11a608f16c0487ded196294fd",
+      "bytes": 286
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/04_入库资料/DS_CH06_HW_作业题目.md",
+      "sha256": "3d104b2d52368f60cfc7b5dde94186c5dfee2bf287fd0482e32490e1c08b70e2",
+      "bytes": 10120
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/04_入库资料/DS_CH06_课件正文.md",
+      "sha256": "f179fbcb042c6f1cfd65b6c14ecee97500a71576c4234a3ca8cdb498ac17d3d5",
+      "bytes": 62621
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/04_入库资料/DS_CH06_题目统计与目录.md",
+      "sha256": "de713e12dc37afd4a558e76fa41bf653f3d13457e8064bfd640d1d802d582ca3",
+      "bytes": 2892
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/05_提取与核对/提取与核对说明.md",
+      "sha256": "dfc8679f1b6f78db204492b6c777eb0626d055582b9fde4d9abc49f991a4d580",
+      "bytes": 1562
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/05_提取与核对/提取记录.json",
+      "sha256": "33d9d96d6678a804d81dccfe70f2ffa47e42e8001471db3a37ce68057081fc04",
+      "bytes": 16929
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/README.md",
+      "sha256": "5e702691edd032935906dd58bc42373b74e34e4b94b9c0ce01881b8e29e151a0",
+      "bytes": 1679
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/导入清单.csv",
+      "sha256": "ff7fa69eec8ae105424a409bfc9361df8da63571b088c457b65f15f4137ecad3",
+      "bytes": 632
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/题目索引.csv",
+      "sha256": "6db83fbe3f5a0789ab9130d980b598213e655e9ff76e9ddda0be0fa8e79abccb",
+      "bytes": 5951
+    },
+    {
+      "path": "chapters/第6章_树和二叉树/题目统计与目录.md",
+      "sha256": "fa5935291a7930466446ccb433a4046c3e70616299db9640a406f149203cad44",
+      "bytes": 1340
+    }
+  ]
+}
